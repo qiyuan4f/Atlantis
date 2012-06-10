@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+	<!-- 部署版本要打开缓存 -->
+		<setting name="cacheEnabled" value="false"/>
+	</settings>
+
+	<typeAliases>
+		<typeAlias alias = "Calendar" type = "java.util.Calendar"/>
+		<typeAlias alias = "User" type = "org.gfg.umas.server.model.User" />
+		<typeAlias alias = "Entity" type = "org.gfg.umas.server.model.Entity" />
+		<typeAlias alias = "Role" type = "org.gfg.umas.server.model.Role" />
+		<typeAlias alias = "Group" type = "org.gfg.umas.server.model.Group" />
+		<typeAlias alias = "Local" type = "org.gfg.umas.server.model.Local" />
+		<typeAlias alias = "EntityGroupMapping" type = "org.gfg.umas.server.model.EntityGroupMapping" />
+		<typeAlias alias = "EntityLocalMapping" type = "org.gfg.umas.server.model.EntityLocalMapping" />
+		<typeAlias alias = "EntityRoleMapping" type = "org.gfg.umas.server.model.EntityRoleMapping" />
+		<typeAlias alias = "RoleLocalMapping" type = "org.gfg.umas.server.model.RoleLocalMapping" />
+		<typeAlias alias = "RoleRoleMapping" type = "org.gfg.umas.server.model.RoleRoleMapping" />
+		<typeAlias alias = "GroupGroupMapping" type = "org.gfg.umas.server.model.GroupGroupMapping" />
+		<typeAlias alias = "ExternResource" type = "org.gfg.umas.server.model.ExternResource" />
+		<typeAlias alias = "ResourceResourceMapping" type = "org.gfg.umas.server.model.ResourceResourceMapping" />
+		<typeAlias alias = "TempExternEntityRightMapping" type = "org.gfg.umas.server.model.TempExternEntityRightMapping" />
+		<typeAlias alias = "ExternRoleResourceMapping" type = "org.gfg.umas.server.model.ExternRoleResourceMapping" />
+		<typeAlias alias = "ExternGroupRightMapping" type = "org.gfg.umas.server.model.ExternGroupRightMapping" />
+		<typeAlias alias = "ExternRight" type = "org.gfg.umas.server.model.ExternRight" />
+		<typeAlias alias = "InternRoleRightMapping" type = "org.gfg.umas.server.model.InternRoleRightMapping" />
+		<typeAlias alias = "InternRight" type = "org.gfg.umas.server.model.InternRight" />
+		<typeAlias alias = "TempEntity" type = "org.gfg.umas.server.model.TempEntity" />
+		<typeAlias alias = "TempGroup" type = "org.gfg.umas.server.model.TempGroup" />
+		<typeAlias alias = "TempEntityGroupMapping" type = "org.gfg.umas.server.model.TempEntityGroupMapping" />
+		<typeAlias alias = "TempTempExternEntityRightMapping" type = "org.gfg.umas.server.model.TempTempExternEntityRightMapping" />
+	</typeAliases>
+	
+	
+	<typeHandlers>
+		<typeHandler javaType = "java.util.Calendar" jdbcType = "TIMESTAMP" handler = "org.gfg.umas.server.util.CalendarTypeHandler"/>
+	</typeHandlers>
+
+	<mappers>
+		<mapper resource = "org/gfg/umas/server/dao/UserMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/EntityMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/RoleMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/GroupMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/EntityGroupMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/EntityLocalMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/EntityRoleMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/RoleLocalMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/RoleRoleMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/GroupGroupMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/ExternResourceMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/ResourceResourceMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/TempExternEntityRightMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/ExternRoleResourceMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/ExternGroupRightMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/ExternRightMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/InternRoleRightMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/InternRightMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/LocalMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/TempEntityMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/TempGroupMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/TempEntityGroupMappingMapper.xml" />
+		<mapper resource = "org/gfg/umas/server/dao/TempTempExternEntityRightMappingMapper.xml" />
+	</mappers>
+</configuration>

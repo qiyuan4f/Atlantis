@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+       http://www.springframework.org/schema/context    
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="order" value="1" />
+	</bean>
+
+	<!-- Hessian 启动BeanNameMapping 映射功能 -->
+	<bean
+		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+		<property name="defaultHandler">
+			<bean class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter"></bean>
+		</property>
+		<property name="order" value="2" />
+	</bean>
+
+	<!-- JSON映射 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<array>
+				<bean
+					class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<value>application/json;charset=UTF-8</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+	</bean>
+
+
+
+	<!-- 多种视图解同时使用析配置 -->
+	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.ResourceBundleViewResolver"> 
+		<property name="basename"> <value>views</value> </property> </bean> -->
+
+	<!-- jsp视图解析配置 -->
+	<!-- <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" 
+		/> <property name="prefix" value="/"></property> <property name="suffix" 
+		value=".jsp"></property> </bean> -->
+
+	<!-- velocity视图解析配置 -->
+	<bean id="velocityConfig"
+		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="configLocation"
+			value="classpath:config/velocity/velocity.properties" />
+		<property name="resourceLoaderPath" value="/template/velocity/" />
+	</bean>
+
+	<bean id="velocityViewResolver"
+		class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<!-- org.springframework.web.servlet.view.velocity.VelocityToolboxView 
+			类只支持1.X的velocitytools, 重写该类 -->
+		<property name="viewClass"
+			value="org.gfg.extend.spring.web.servlet.view.velocity.VelocityToolbox20View" />
+		<!-- 必须使用绝对路经，不能用classpath -->
+		<property name="toolboxConfigLocation" value="/WEB-INF/classes/config/velocity/toolbox.xml" />
+
+		<!-- 处理页面中文乱码问题 -->
+		<property name="contentType" value="text/html;charset=UTF-8" />
+
+		<!-- 把Spring的RequestContext对象暴露为变量rc, 利用${rc.contextPath}来获取应用程序的contextPath(也 
+			就是/MyUsers)；如利用${rc.getMessage("user.name")} 读取/WEB- INF/classes/messages.properties本地化信息 -->
+		<property name="requestContextAttribute" value="rc" />
+
+		<!-- 设置是否通过Spring的宏库暴露一个RequestContext(名为 springBindRequestContext)供外部使用 -->
+		<property name="exposeSpringMacroHelpers" value="true" />
+
+		<!-- 默认值false，设置是否所有的request属性在与模板进行合并之前添加到model中 -->
+		<property name="exposeSessionAttributes" value="true" />
+
+		<!-- 默认值false，设置是否所有的session属性在与模板进行合并之前添加到model中 -->
+		<property name="exposeRequestAttributes" value="true" />
+
+		<property name="cache" value="false" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".vm" />
+	</bean>
+
+	<!-- freemarker视图解析配置 -->
+	<!-- <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer"> 
+		<property name="templateLoaderPath" value="/template/freemarker/" /> </bean> 
+		<bean id="freemarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver"> 
+		<property name="cache" value="false" /> <property name="suffix" value=".ftl" 
+		/> <property name="exposeSpringMacroHelpers" value="true" /> </bean> -->
+
+	<!-- 配置异常信息视图解析器 -->
+	<bean id="exceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="/exception/" />
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.sql.SQLException">error-database</prop>
+				<prop key="java.lang.RuntimeException">error-runtime</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="2000000" />
+	</bean>
+
+	<bean id="methodNameResolver"
+		class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName" value="method" />
+		<property name="defaultMethodName" value="index" />
+	</bean>
+
+
+</beans>

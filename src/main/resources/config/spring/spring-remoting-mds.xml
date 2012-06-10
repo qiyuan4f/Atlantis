@@ -1,0 +1,43 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans> 
+	<bean id="gridNodeRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/gridNode"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.GridNodeRemoting"/> 
+	</bean> 
+	<bean id="productMetadataRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/product"/>
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.ProductMetadataRemoting"/> 
+	</bean> 
+	<bean id="softwareMetadataRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/software"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.SoftwareMetadataRemoting"/> 
+	</bean> 
+	<bean id="coreCategoryDataRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/coreCategory"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.CoreCategoryDataRemoting"/> 
+	</bean> 
+	<bean id="criterionMessageRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/criterion"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.CriterionMessageRemoting"/> 
+	</bean> 
+	<bean id="userCategoryDataRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/userCategory"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.UserCategoryDataRemoting"/> 
+	</bean> 
+	<bean id="synchronizationTacticsRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/synchronization"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.SynchronizationTacticsRemoting"/> 
+	</bean> 
+		<bean id="dataSourceRemoting" class="org.springframework.remoting.caucho.HessianProxyFactoryBean"> 
+		<property name="overloadEnabled" value="true" />
+		<property name="serviceUrl" value="${mds.url}/hessian/dataSource"/> 
+		<property name="serviceInterface" value="org.gfg.portal.remoteinterface.mds.DataSourceRemoting"/> 
+	</bean> 
+</beans>

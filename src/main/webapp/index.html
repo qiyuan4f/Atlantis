@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/global.css" type="text/css"/>
+<link rel="stylesheet" href="css/index.css" type="text/css"/>
+<title>高分网格-门户索引</title>
+<!--[if IE 6]>
+<script type="text/javascript" src="../js/png.js" ></script>
+<script type="text/javascript"> 
+	DD_belatedPNG.fix('.header-title, .header-sub-title-bg, .header-sub-title, .content, .content-bg, .login-header, .login-content-column1, .login-content-column2, .login-content-column3,  .login-footer');
+</script>
+<![endif]-->
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#global-wrapper {display:table;height:100%}
+	</style>
+<![endif]-->
+
+	<script type="text/javascript">
+		if(window.addEventListener){
+			window.addEventListener("load",initial,false);
+		}else if(window.attachEvent){
+			window.attachEvent("onload",initial);
+		}
+
+		function initial(){
+			var aa = document.getElementsByClassName("detail");
+
+			for (var i = 1; i < aa.length; ++i) {
+				aa[i].style.display = "none";
+			};
+
+			document.getElementsByClassName("nav-button")[0].style.backgroundPosition = "0 -93px";
+			document.getElementsByClassName("nav-button")[0].style.color = "#c00000";
+		}
+
+		function onClick(obj,content){
+			var aa = document.getElementsByClassName("detail");
+			var bg_position =document.getElementsByClassName("nav-button");
+
+			for (var i = 0; i < aa.length; ++i) {
+				aa[i].style.display = "none";
+			}
+
+			for(var j = 0; j < bg_position.length; j++){
+				bg_position[j].style.backgroundPosition = "0 0";
+				bg_position[j].style.color = "#5599ff";
+			}
+
+			obj.getElementsByClassName("nav-button")[0].style.backgroundPosition = "0 -93px";
+			obj.getElementsByClassName("nav-button")[0].style.color = "#c00000";
+			content.style.display = "";
+		}
+	</script>
+</head>
+
+<body>
+<div id="global-wrapper">
+	<div id="head">
+		<div class="search">
+			<input class="search-text" type="text"/>
+			<input class="search-button" type="button" value="搜索"/>
+		</div>
+		<img src="images/leaf_logo.png"  class="logo">
+		<div class="line"></div>
+	</div>
+	<div id="global-main" class="clearfix">
+		<div id="content">
+			<div class="help">
+				<a class="link"  href="#">帮助</a>
+				<h1>概述</h1>
+			</div>
+			<div class="summary">
+				<div class="summary-text">Title</div>
+				<img src="images/banner_1.png" />
+			</div>
+			<div class="content-wrapper">
+				<ul class="nav">
+					<li onclick="onClick(this,document.getElementById('project'))">
+						<img src="images/project.png" alt=""/>
+						<div class="nav-button">
+							<h3>项目开发</h3>
+							<p>提供项目过程管理、缺陷追踪等服务</p>
+						</div>
+					</li>
+					<li onclick="onClick(this,document.getElementById('office'))">
+						<img src="images/project.png" alt=""/>
+						<div class="nav-button">
+							<h3>日常办公</h3>
+							<p>提供E-mail、日常任务领取等服务</p>
+						</div>
+					</li>
+					<li onclick="onClick(this,document.getElementById('share'))">
+						<img src="images/project.png" alt=""/>
+						<div class="nav-button">
+							<h3>站内资源</h3>
+							<p>提供软件、文档、操作系统镜像等各类资源</p>
+						</div>
+					</li>
+					<li onclick="onClick(this,document.getElementById('wiki'))">
+						<img src="images/project.png" alt=""/>
+						<div class="nav-button">
+							<h3>维基百科</h3>
+							<p>提供丰富的开发手册、解决方案、学习路线等知识库</p>
+						</div>
+					</li>
+				</ul>
+				<div class="clear"><hr/></div>
+			</div>
+			<div class="detail" id="project">
+				<ul class="summary-nav align_left">
+					<li class="system-title"></li>
+					<li class="system-thumbs system-pms"></li>
+					<li class="system-thumbs system-cr"></li>
+					<li class="system-thumbs system-ci"></li>
+					<li class="system-thumbs system-gitweb"></li>
+					<li class="system-thumbs system-svn"></li>
+				</ul>
+				<div class="line clear"></div>
+				<ul class="feature-list">
+					<li>
+						<div class ="align_right">
+							<img src="images/thumb_pms.png" alt=""/>
+							<h5>Project Manage System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分项目管理系统 PMS</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，最常用就是对DOM的操作，而在与用户进行交互的过程中，离不开事件的绑定（选项卡、手风琴效果、slide框，走马灯效果等），有时候还要用到解除对绑定事件。在这篇文章中，我们就稍微深入地探讨一下事件的绑定与解除</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_left">
+							<img src="images/thumb_cr.png" alt=""/>
+							<h5>Code Review System</h5>
+						</div>
+						<div class="align_right">
+							<h1>高分代码评审系统 CR</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_ci.png" alt=""/>
+							<h5>Continuous Integration System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分持续集成系统 CI</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_left">
+							<img src="images/thumb_gitweb.png" alt=""/>
+							<h5>Gitweb System</h5>
+						</div>
+						<div class="align_right">
+							<h1>高分分布式版本管理系统 Git</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_svn.png" alt=""/>
+							<h5>Subversion System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分版本管理系统 SVN</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="detail" id="office">
+				<ul class="summary-nav align_left">
+					<li class="system-title"></li>
+					<li class="system-thumbs system-pms"></li>
+					<li class="system-thumbs system-email"></li>
+					<li class="system-thumbs system-im"></li>
+				</ul>
+				<div class="line clear"></div>
+				<ul class="feature-list">
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_pms.png" alt=""/>
+							<h5>Project Manage System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分项目管理系统 PMS</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，最常用就是对DOM的操作，而在与用户进行交互的过程中，离不开事件的绑定（选项卡、手风琴效果、slide框，走马灯效果等），有时候还要用到解除对绑定事件。在这篇文章中，我们就稍微深入地探讨一下事件的绑定与解除</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_left">
+							<img src="images/thumb_email.png" alt=""/>
+							<h5>Email Manage System</h5>
+						</div>
+						<div class="align_right">
+							<h1>高分邮件管理系统 Email</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_im.png" alt=""/>
+							<h5>Instant Messaginge System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分项目管理系统 IM</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，最常用就是对DOM的操作，而在与用户进行交互的过程中，离不开事件的绑定（选项卡、手风琴效果、slide框，走马灯效果等），有时候还要用到解除对绑定事件。在这篇文章中，我们就稍微深入地探讨一下事件的绑定与解除</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="detail" id="share">
+				<ul class="summary-nav align_left">
+					<li class="system-title"></li>
+					<li class="system-thumbs system-pms"></li>
+					<li class="system-thumbs system-ftp"></li>
+					<li class="system-thumbs system-svn"></li>
+				</ul>
+				<div class="line clear"></div>
+				<ul class="feature-list">
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_pms.png" alt=""/>
+							<h5>Project Manage System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分项目管理系统 PMS</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，最常用就是对DOM的操作，而在与用户进行交互的过程中，离不开事件的绑定（选项卡、手风琴效果、slide框，走马灯效果等），有时候还要用到解除对绑定事件。在这篇文章中，我们就稍微深入地探讨一下事件的绑定与解除</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_left">
+							<img src="images/thumb_ftp.png" alt=""/>
+							<h5>File Transfer Protocol System</h5>
+						</div>
+						<div class="align_right">
+							<h1>高分文件传输系统 FTP</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_svn.png" alt=""/>
+							<h5>Subversion System</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分版本管理系统 SVN</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="detail" id="wiki">
+				<ul class="summary-nav align_left">
+					<li class="system-title"></li>
+					<li class="system-thumbs system-wiki"></li>
+					<li class="system-thumbs system-demo"></li>
+					<li class="system-thumbs system-api"></li>
+				</ul>
+				<div class="line clear"></div>
+				<ul class="feature-list">
+					<li>
+						<img class="align_right clear" src="images/thumb_wiki.png" alt=""/>
+						<h5 class="align_right clear">Wikipedia System</h5>
+						<h1>高分维基百科系统 wiki</h1>
+						<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+						<h4>管类类别</h4>
+						<p>谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，谈到 javascript 在日常开发中的应用，最常用就是对DOM的操作，而在与用户进行交互的过程中，离不开事件的绑定（选项卡、手风琴效果、slide框，走马灯效果等），有时候还要用到解除对绑定事件。在这篇文章中，我们就稍微深入地探讨一下事件的绑定与解除</p>
+						<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_left">
+							<img src="images/thumb_demo.png" alt=""/>
+							<h5>Demo System</h5>
+						</div>
+						<div class="align_right">
+							<h1>高分实例演示程序 Demo</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+					<li>
+						<div class="align_right">
+							<img src="images/thumb_api.png" alt=""/>
+							<h5>Application Programming Interface</h5>
+						</div>
+						<div class="align_left">
+							<h1>高分各程序api文档 API</h1>
+							<p>Redmine is a flexible project management web application. Written using the Ruby on Rails framework, it is cross-platform and cross-database.Redmine is open source and released under the terms of the GNU General Public License v2 (GPL).</p>
+							<h4>管类类别</h4>
+							<p>Manage all your projects with one Redmine instance
+								Each user can have a different role on each project
+								Each project can be declared as public (visible by anyone) or private (visible by project members only)
+								Modules (eg. wiki, repository, issue tracking, ...) can be enabled/disabled at project level</p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="#">www.33.com</a></p>
+						</div>
+						<div class="line clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="content-wrapper">
+				<ul class="friend-link">
+					<li><img src="images/google.png" alt=""/></li>
+					<li><img src="images/facebook.png" alt=""/></li>
+					<li><img src="images/flickr.png" alt=""/></li>
+					<li><img src="images/rss.png" alt=""/></li>
+					<li><img src="images/delicious.png" alt=""/></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="global-footer">
+	<div class="footer-bg">
+		<div class="footer-wrapper">
+			<div class="footer-title"> </div>
+			<div class="footer-copyright-wrapper">
+				<div class="footer-copyright"> <span>地址：浙江省杭州市浙江大学 邮编：310000</span> <span>技术支持：浙江大学CCNT实验室</span> <span>Copyright &copy; 2012 CCNT. All rights reserved. 浙江大学CCNT实验室版权所有.</span> </div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

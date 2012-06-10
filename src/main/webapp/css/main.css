@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+/* 主体部分的样式 */
+.content { width:100%; height:100%; background:url(../images/content-top-bg.png) top repeat-x}
+.content-bg { width:100%; height:100%; background:url(../images/content-top-bg2.jpg) top center no-repeat}

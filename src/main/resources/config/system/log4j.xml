@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!--
+		=====================================================================
+	-->
+	<!--
+		=====================================================================
+	-->
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{yyyy-MM-dd hh:mm:ss}:%p %t %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="PROJECT" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="bg.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<param name="append" value="false" />
+		<param name="encoding" value="UTF-8" />
+		<param name="threshold" value="info" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%n%d [%X{loginUserNick}@%X{remoteAddr} - %X{method} %X{requestURIWithQueryString}] %nUserAgent: %X{userAgent}%nReferrer: %X{referrer}%n%-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="PROJECT-DEBUG" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="bg-debug.log" />
+		<param name="append" value="false" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%n%d [%X{loginUserNick}@%X{remoteAddr} - %X{method} %X{requestURIWithQueryString}] %nUserAgent: %X{userAgent}%nReferrer: %X{referrer}%n%-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="ALERT" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="bg-alert.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%n%d [%X{loginUserNick}@%X{remoteAddr} - %X{method} %X{requestURIWithQueryString}] %nUserAgent: %X{userAgent}%nReferrer: %X{referrer}%n%-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<!--
+		=====================================================================
+	-->
+	<!--
+		=====================================================================
+	-->
+	<logger name="org.apache.commons.beanutils" additivity="true">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.apache.commons.digester" additivity="true">
+		<level value="ERROR" />
+	</logger>
+
+	<root>
+		<level value="info" />
+		<appender-ref ref="CONSOLE"/>	
+		<appender-ref ref="PROJECT" />
+		<appender-ref ref="PROJECT-DEBUG" />		
+	</root>
+</log4j:configuration>
