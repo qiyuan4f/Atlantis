@@ -68,6 +68,7 @@ body:before {
 .system-wiki{background:url(../images/icon.png) -1120px 0}
 .system-demo{background:url(../images/icon.png) -1260px 0}
 .system-api{background:url(../images/icon.png) -1400px 0}
+.system-vps{background:url("../images/icon.png") -1540px 0}
 
 .feature-list{width:100%;height:auto;text-align:left}
 .feature-list li{width:100%;clear:both;padding:10px 10px 0px 10px;}
