@@ -37,7 +37,7 @@ body:before {
 #content{width:950px;height:auto;margin:0 auto}
 .help{width:100%;height:36px;background:url(../images/banner_2.png) repeat-x;margin-top:20px;margin-right:60px}
 .help .link{color:white;float:right;padding-right:10px;line-height:36px;}
-.help h1{color:white;padding-left:10px;line-height:36px;text-align:left;}
+.help h1{color:white;padding-left:10px;line-height:36px;text-align:left;font-family:"黑体"}
 
 .summary{width:100%;height:170px;margin-bottom:20px;background:url(../images/banner_bg.png) repeat-x;}
 .summary img{padding-top:19px}
@@ -49,8 +49,8 @@ body:before {
 .nav li{width:224px;height:160px;float:left;padding-right:12px;}
 .nav img{width:206px;height:142px;display:block;margin-left:8px}
 .nav-button{width:224px;height:93px;background:url(../images/button.png) no-repeat 0 0;display:block;color:#5599ff;position:relative;left:0px;bottom:75px;cursor:pointer}
-.nav-button h3{padding-top:20px;}
-.nav-button p{color:gray;width:160px;height:20px;margin:0 auto;overflow:hidden;}
+.nav-button h2{padding-top:15px; font-family:"黑体"}
+.nav-button p{color:gray;;height:20px;margin:0 auto;overflow:hidden; padding-left: 5px; padding-right: 5px}
 
 .summary-nav{width:100%;height:130px}
 .summary-nav li{display:block;float:left;margin:10px 10px 0 10px;cursor:pointer}
@@ -60,7 +60,7 @@ body:before {
 .system-pms{background:url(../images/icon.png) 0 0}
 .system-cr{background:url(../images/icon.png) -140px 0}
 .system-ci{background:url(../images/icon.png) -280px 0}
-.system-gitweb{background:url(../images/icon.png) -420px 0}
+.system-git{background:url(../images/icon.png) -420px 0}
 .system-svn{background:url(../images/icon.png) -560px 0}
 .system-ftp{background:url(../images/icon.png) -700px 0}
 .system-email{background:url(../images/icon.png) -840px 0}
