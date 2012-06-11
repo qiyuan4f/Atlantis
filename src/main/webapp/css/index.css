@@ -75,7 +75,7 @@ body:before {
 .feature-list img{margin-right:20px}
 .feature-list h1{font-family:"黑体"}
 .feature-list p{width:480px;height:auto;line-height:20px;margin:12px 0;overflow:auto;}
-.feature-list h5{width:420px;line-height:20px;margin:10px 20px 10px 0px;background:#e4edf1;text-align:center}
+.feature-list h5{width:420px;line-height:20px;margin:10px 0px;background:#e4edf1;text-align:center}
 
 .category {line-height:12px;text-align:right;text-decoration:none;position:relative;bottom:-10px;}
 
