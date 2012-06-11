@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ccf9b89b-3188-4622-bba9-4400dd98bf27" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
     </list>
     <ignored path="Atlantis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,11 +72,11 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="376" column="36" selection-start="0" selection-end="15412" vertical-scroll-proportion="0.5458015">
+            <state line="54" column="9" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.519084">
               <folding>
-                <marker date="1339430984000" expanded="true" signature="499:714" placeholder="..." />
-                <marker date="1339430984000" expanded="true" signature="769:825" placeholder="..." />
-                <marker date="1339430984000" expanded="true" signature="789:816" placeholder="{...}" />
+                <marker date="1339431686000" expanded="true" signature="499:714" placeholder="..." />
+                <marker date="1339431686000" expanded="true" signature="769:825" placeholder="..." />
+                <marker date="1339431686000" expanded="true" signature="789:816" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -603,7 +602,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="23" width="1694" height="1034" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31704545" sideWeight="0.48286414" order="7" side_tool="false" content_ui="tabs" />
@@ -617,7 +616,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290993" sideWeight="0.4877601" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.49754903" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19400245" sideWeight="0.32678983" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284091" sideWeight="0.4902081" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284091" sideWeight="0.4902081" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3996328" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -753,11 +752,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="36" selection-start="0" selection-end="15412" vertical-scroll-proportion="0.5458015">
+        <state line="54" column="9" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.519084">
           <folding>
-            <marker date="1339430984000" expanded="true" signature="499:714" placeholder="..." />
-            <marker date="1339430984000" expanded="true" signature="769:825" placeholder="..." />
-            <marker date="1339430984000" expanded="true" signature="789:816" placeholder="{...}" />
+            <marker date="1339431686000" expanded="true" signature="499:714" placeholder="..." />
+            <marker date="1339431686000" expanded="true" signature="769:825" placeholder="..." />
+            <marker date="1339431686000" expanded="true" signature="789:816" placeholder="{...}" />
           </folding>
         </state>
       </provider>
