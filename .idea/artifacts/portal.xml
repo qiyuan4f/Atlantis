@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="portal">
-    <output-path>$PROJECT_DIR$/target/artifacts/portal</output-path>
-    <root id="root">
-      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
-    </root>
-  </artifact>
-</component>
