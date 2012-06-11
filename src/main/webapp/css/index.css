@@ -76,9 +76,9 @@ body:before {
 .feature-list p{width:480px;height:auto;line-height:20px;margin:12px 0;overflow:auto;}
 .feature-list h5{width:420px;line-height:20px;margin:10px 20px 10px 0px;border:1px #e4edf1 solid}
 
-.category {width:420px;line-height:14px;text-align:right;font-size:14px;text-decoration:none;position:relative;bottom:-10px}
-.category a{color:blue;}
-.category img{padding-right:4px}
+.category {line-height:12px;text-align:right;text-decoration:none;position:relative;bottom:-10px;}
+
+.category img{margin-right:4px;vertical-align:middle;}
 
 .friend-link{width:100%;height:auto;}
 .friend-link li{height:32px;line-height:32px;float:right;font-size:14px;font-weight:bold;color:#5599ff;padding-left:10px;cursor:pointer}
