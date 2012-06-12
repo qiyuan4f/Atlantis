@@ -56,7 +56,7 @@
         function fast_nav(e) {
             var url = e.target.getAttribute("href");
             if (url !== null && url !== undefined) {
-                window.location.href = url;
+	            window.open(url);
             }
         }
 	</script>
@@ -65,15 +65,20 @@
 <body>
 <div id="global-wrapper">
 	<div id="head">
-		<div class="search">
+		<p class="about">
+			<a class="blue bold"  href="#">注册</a> |
+			<a class="bold"  href="#">登录</a> |
+			<a class="bold" href="#">关于</a>
+		</p>
+		<div class="search clear">
             <label>
                 <input class="search-text" type="text"/>
             </label>
             <input class="search-button" type="button" value="搜索"/>
 		</div>
-		<img src="images/leaf_logo.png"  class="logo" alt="" />
-		<div class="line"></div>
+		<img src="images/logo.png"  class="logo" alt="" />
 	</div>
+	<div class="line"></div>
 	<div id="global-main" class="clearfix">
 		<div id="content">
 			<div class="help">
@@ -82,7 +87,7 @@
 			</div>
 			<div class="summary">
 				<p class="summary-text">
-                    一路走来，项目组走过很多弯路，有过喜悦，有过失落，但是不变的是坚持。在不断地探索、发现和总结中，我们持续完善自己，完善团队的管理规范。<br />
+                    一路走来，我们走过很多弯路，有过喜悦，有过失落，但是不变的是坚持。在不断地探索、发现和总结中，我们持续完善自己，完善团队的管理规范。<br />
                     我们始终坚持<strong>规范以人为本</strong>，科学、敏捷；坚持<strong>管理以规范公正为基础</strong>，公平、效率；坚持<strong>一切为团队的根本利益服务</strong>，同舟共济。
                 </p>
 				<img src="images/banner_1.png"  alt=""/>

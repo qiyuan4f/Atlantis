@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 html, body, from {height: 100%;}
-body{min-width:1280px;}
+body{min-width:1200px;}
 #global-wrapper {min-height: 100%;}
 #global-main {padding-bottom:110px; overflow:auto}  /* 必须使用和footer相同的高度 */
 #global-footer {position:relative; margin-top:-110px; height: 110px; clear:both;}
@@ -28,10 +28,11 @@ body:before {
 
 /*头部内容样式*/
 #head{width:1000px; margin:0 auto;}
-.logo{ margin-left:20px;}
-.search{width:300px;float:right;margin-top:40px;}
-.search-text{width:196px;height:24px;border:1px #cccccc solid;padding-left:4px}
-.search-button{width:50px;;height:24px;margin-left:10px;font-size:1em;line-height:20px;}
+.logo{ margin-left:16px;}
+.about{float:right;width:300px;text-align:right;}
+.search{width:260px;float:right;margin-top:20px;}
+.search-text{width:190px;height:24px;border:1px #cccccc solid;padding-left:2px;}
+.search-button{width:50px;height:24px;margin-left:10px;font-size:1em;line-height:20px;float:right;}
 
 /*内容部分样式*/
 #content{width:950px;height:auto;margin:0 auto}
