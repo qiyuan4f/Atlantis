@@ -6,8 +6,8 @@
 <link rel="stylesheet" href="css/index.css" type="text/css"/>
 <title>高分网格-门户索引</title>
 <!--[if IE 6]>
-<script type="text/javascript" src="../js/png.js" ></script>
-<script type="text/javascript"> 
+<script type="text/javascript" src="script/png.js" ></script>
+<script type="text/javascript">
 	DD_belatedPNG.fix('.header-title, .header-sub-title-bg, .header-sub-title, .content, .content-bg, .login-header, .login-content-column1, .login-content-column2, .login-content-column3,  .login-footer');
 </script>
 <![endif]-->
@@ -30,9 +30,8 @@
 
 			for (var i = 1; i < aa.length; ++i) {
 				aa[i].style.display = "none";
-			};
-
-			document.getElementsByClassName("nav-button")[0].style.backgroundPosition = "0 -93px";
+            }
+            document.getElementsByClassName("nav-button")[0].style.backgroundPosition = "0 -93px";
 			document.getElementsByClassName("nav-button")[0].style.color = "#c00000";
 		}
 
@@ -55,7 +54,7 @@
 		}
 
         function fast_nav(e) {
-            var url = e.target.getAttribute("href")
+            var url = e.target.getAttribute("href");
             if (url !== null && url !== undefined) {
                 window.location.href = url;
             }
@@ -67,10 +66,12 @@
 <div id="global-wrapper">
 	<div id="head">
 		<div class="search">
-			<input class="search-text" type="text"/>
-			<input class="search-button" type="button" value="搜索"/>
+            <label>
+                <input class="search-text" type="text"/>
+            </label>
+            <input class="search-button" type="button" value="搜索"/>
 		</div>
-		<img src="images/leaf_logo.png"  class="logo">
+		<img src="images/leaf_logo.png"  class="logo" alt="" />
 		<div class="line"></div>
 	</div>
 	<div id="global-main" class="clearfix">
@@ -82,9 +83,9 @@
 			<div class="summary">
 				<p class="summary-text">
                     一路走来，项目组走过很多弯路，有过喜悦，有过失落，但是不变的是坚持。在不断地探索、发现和总结中，我们持续完善自己，完善团队的管理规范。<br />
-                    我们始终坚持<B>规范以人为本</B>，科学、敏捷；坚持<B>管理以规范公正为基础</B>，公平、效率；坚持<B>一切为团队的根本利益服务</B>，同舟共济。
+                    我们始终坚持<strong>规范以人为本</strong>，科学、敏捷；坚持<strong>管理以规范公正为基础</strong>，公平、效率；坚持<strong>一切为团队的根本利益服务</strong>，同舟共济。
                 </p>
-				<img src="images/banner_1.png" />
+				<img src="images/banner_1.png"  alt=""/>
 			</div>
 			<div class="content-wrapper">
 				<ul class="nav">
@@ -122,10 +123,10 @@
 			<div class="detail" id="project">
 				<ul class="summary-nav align_left" onclick="fast_nav(event)">
 					<li class="system-title" href="#"></li>
-					<li class="system-thumbs system-pms" href="http://pms.ccntgrid.org"></li>
-					<li class="system-thumbs system-cr" href="http://cr.ccntgrid.org:8000"></li>
-					<li class="system-thumbs system-ci" href="http://ci.ccntgrid.org"></li>
-					<li class="system-thumbs system-vps" href="#"></li>
+					<li class="system-thumbs system-pms" href="http://pms.ccntgrid.org" title="项目管理系统"></li>
+					<li class="system-thumbs system-cr" href="http://cr.ccntgrid.org:8000" title="代码评审平台"></li>
+					<li class="system-thumbs system-ci" href="http://ci.ccntgrid.org" title="持续集成平台"></li>
+					<li class="system-thumbs system-vps" href="http://vps.ccntgrid.org" title="虚拟主机服务"></li>
 				</ul>
 				<div class="line clear"></div>
 				<ul class="feature-list">
@@ -140,9 +141,9 @@
 							<h4>系统漫游</h4>
 							<p>
                                 PMS主要功能包含基于角色的权限控制、项目活动、新闻、讨论区、版本库、文档管理以及便捷的文件分享。<br />
-                                PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<B>工作台</B>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<B>Check邮件</B>或者<B>直接登陆到您的工作台</B>处理和分配项目任务。
+                                PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<strong>工作台</strong>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<strong>Check邮件</strong>或者<strong>直接登陆到您的工作台</strong>处理和分配项目任务。
                             </p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png"  alt=""/></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -159,7 +160,7 @@
 								CR主要功能包括基于Git的代码评审机制、基于角色的权限控制、代码差异查看以及分支管理合并。<br />
 								CR的设计基于Git分布式版本控制系统，当开发者向版本库提交代码，系统会自动将其提交到评审平台（代替默认直接提交到版本库中的操作），经过既定的审核流程后代码会被合并到版本库中，并且会在CI上执行一次自动构建。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -176,7 +177,7 @@
 								CI主要功能包括基于角色的权限控制、可定制的构建部署以及自动化测试。<br />
 								CI是面向程序的设计，在用户体验上不足，但是有着强大的定制扩展支持，因此由SCM直接管理，不对普通用户开发配置。管理员可以根据需要定制构建的周期、条件以及方式，适应软件的自动发布，提高部署发布效率。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://ci.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://ci.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -193,18 +194,18 @@
 								VPS主要功能包括虚拟主机管理、虚拟主机迁移、快照服务以及3389远程控制服务。<br />
 								当项目生命周期中需要使用服务器搭建实验环境就通过简单的一些授权使用VPS，她能够快速的虚拟化生成所需的实验硬件环境，并且后期管理变更十分方便。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
 				</ul>
 			</div>
 			<div class="detail" id="office">
-				<ul class="summary-nav align_left">
-					<li class="system-title"></li>
-					<li class="system-thumbs system-pms"></li>
-					<li class="system-thumbs system-email"></li>
-					<li class="system-thumbs system-im"></li>
+				<ul class="summary-nav align_left" onclick="fast_nav(event)">
+					<li class="system-title" href="#"></li>
+					<li class="system-thumbs system-pms" href="http://pms.ccntgrid.org" title="项目管理系统"></li>
+					<li class="system-thumbs system-email" href="http://mail.ccntgrid.org" title="邮件服务系统"></li>
+					<li class="system-thumbs system-im" href="http://im.ccntgrid.org" title="即时通讯平台"></li>
 				</ul>
 				<div class="line clear"></div>
 				<ul class="feature-list">
@@ -221,7 +222,7 @@
 								PMS主要功能包含基于角色的权限控制、项目活动、新闻、讨论区、版本库、文档管理以及便捷的文件分享。<br />
 								PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<B>工作台</B>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<B>Check邮件</B>或者<B>直接登陆到您的工作台</B>处理和分配项目任务。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -238,7 +239,7 @@
 								Gmail主要功能包括支持传统的smtp/pop3服务、imap即时邮件服务以及在线的web mail服务。<br />
 								Gmail是面向用户的设计，有良好的用户体验，优美的UI界面，您可以通过web mail或者熟悉的邮件客户端方便的管理您的日常邮件。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://mail.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://mail.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -255,19 +256,19 @@
 								IM主要功能包括在线消息通讯、离线消息留言、文件传输、语音会议、联系人/群组管理以及基于邮件的通知提醒服务。<br />
 								您可以通过统一身份认证ID登陆IM，与实验室内所有成员沟通、协作，享受无限的即时通讯服务。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://im.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://im.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
 				</ul>
 			</div>
 			<div class="detail" id="share">
-				<ul class="summary-nav align_left">
-					<li class="system-title"></li>
-					<li class="system-thumbs system-pms"></li>
-					<li class="system-thumbs system-ftp"></li>
-					<li class="system-thumbs system-svn"></li>
-					<li class="system-thumbs system-git" href="http://cr.ccntgrid.org:8000"></li>
+				<ul class="summary-nav align_left" onclick="fast_nav(event)">
+					<li class="system-title" href="#"></li>
+					<li class="system-thumbs system-pms" href="http://pms.ccntgrid.org" title="项目管理系统"></li>
+					<li class="system-thumbs system-ftp" href="ftp://ftp.ccntgrid.org" title="FTP资源站"></li>
+					<li class="system-thumbs system-svn" href="http://csvn.ccntgrid.org:3343" title="SVN版本控制管理系统"></li>
+					<li class="system-thumbs system-git" href="http://cr.ccntgrid.org:8000" title="Git版本控制管理系统"></li>
 				</ul>
 				<div class="line clear"></div>
 				<ul class="feature-list">
@@ -282,9 +283,9 @@
 							<h4>系统漫游</h4>
 							<p>
 								PMS主要功能包含基于角色的权限控制、项目活动、新闻、讨论区、版本库、文档管理以及便捷的文件分享。<br />
-								PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<B>工作台</B>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<B>Check邮件</B>或者<B>直接登陆到您的工作台</B>处理和分配项目任务。
+								PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<strong>工作台</strong>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<strong>Check邮件</strong>或者<strong>直接登陆到您的工作台</strong>处理和分配项目任务。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt="" /><a href="http://pms.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -301,7 +302,7 @@
 								GFTP主要功能包括基于FTP的文件传输服务、文件分享、QoS以及目录检索。<br />
 								GFTP是您日常办公以及项目开发过程中不可或缺的一部分，您可以在GFTP主站下载操作系统镜像、软件、文档等整理的各类资源；同时，您也可以通过上传与大家分享您所拥有的有价值的资源。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="ftp://ftp.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="ftp://ftp.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -318,7 +319,7 @@
 								SVN主要功能包括基于用户名/密码的安全控制、便捷易用的变更管理。<br />
 								基于集中式设计的SVN，非常容易上手，简单的提交、更新、编辑冲突即可完成日常的工作，实现简单的版本管理控制，适合刚接触版本控制的同学使用。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://csvn.ccntgrid.org:3343"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://csvn.ccntgrid.org:3343"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -335,33 +336,37 @@
 								Git主要功能包括基于SSH的安全控制、灵活的分支/里程碑管理。<br />
 								基于分布式设计的Git，在学习路线上较为陡峭，复杂而又繁多的命令，但是其优秀的设计思想，使Git灵活而又富有扩展性。在您接受她之后，就会体会到一种秀丽的异域风采。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000/gitweb"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000/gitweb"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
 				</ul>
 			</div>
 			<div class="detail" id="wiki">
-				<ul class="summary-nav align_left">
-					<li class="system-title"></li>
-					<li class="system-thumbs system-wiki"></li>
-					<li class="system-thumbs system-demo"></li>
-					<li class="system-thumbs system-api"></li>
+				<ul class="summary-nav align_left" onclick="fast_nav(event)">
+					<li class="system-title" href="#"></li>
+					<li class="system-thumbs system-wiki" href="http://wiki.ccntgrid.org/wiki" title="百科知识库"></li>
+					<li class="system-thumbs system-demo" href="http://demo.ccntgrid.org" title="虚拟实验室"></li>
+					<li class="system-thumbs system-api" href="http://api.ccntgrid.org" title="API开放平台"></li>
 				</ul>
 				<div class="line clear"></div>
 				<ul class="feature-list">
 					<li>
-						<img class="align_right clear" src="images/thumb_wiki.png" alt=""/>
-						<h5 class="align_right clear">Wikipedia System</h5>
-						<h1>wiki(高分知识库系统)</h1>
-						<p>wiki是一个知识管理系统。<br />提供公众协同、知识分类、知识版本管理等完整的知识库管理支持。</p>
-						<h4>系统漫游</h4>
-						<p>
-							wiki主要功能包括基于角色的权限管理、便捷的知识分类管理、以及基于公众协同模型的知识版本管理。<br />
-							wiki是实验室最宝贵的资产，汇集无限的解决方案、百科知识、技术学习教程，有了她您在日常的研究工作和学习肯定会事半功倍。
-						</p>
-						<p class="category"><img src="images/external.png" alt=""/><a href="http://wiki.ccntgrid.org"><img src="images/more.png" /></a></p>
-						<div class="line clear"></div>
+                        <div class="align_right">
+                            <img src="images/thumb_wiki.png" alt=""/>
+                            <h5>Wikipedia System</h5>
+                        </div>
+                        <div class="align_left">
+                            <h1>wiki(高分知识库系统)</h1>
+                            <p>wiki是一个知识管理系统。<br />提供公众协同、知识分类、知识版本管理等完整的知识库管理支持。</p>
+                            <h4>系统漫游</h4>
+                            <p>
+                                wiki主要功能包括基于角色的权限管理、便捷的知识分类管理、以及基于公众协同模型的知识版本管理。<br />
+                                wiki是实验室最宝贵的资产，汇集无限的解决方案、百科知识、技术学习教程，有了她您在日常的研究工作和学习肯定会事半功倍。
+                            </p>
+                            <p class="category"><img src="images/external.png" alt="" /><a href="http://wiki.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+                        </div>
+                        <div class="line clear"></div>
 					</li>
 					<li>
 						<div class="align_left">
@@ -376,7 +381,7 @@
 								demo主要功能包括软件功能示例、算法程序示例以及前端界面展示。<br />
 								demo是一个软件虚拟实验室，囊括了非常多常用的程序demo以及实验室成员在学习过程中积累分享的实验程序；demo同样也是在日常研究和学习过程中必不可少的一部分。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://demo.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://demo.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -393,7 +398,7 @@
 								API开放平台主要功能包括提供API文档的在线浏览、检索和打包下载。<br />
 								API开放平台是在开发过程中一个得力的助手，能帮助您快速的找到相关的接口描述和程序示例；除此之外，您还可以通过打包下载功能得到离线版的API文档，让您能够随时、随地查阅API。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://api.ccntgrid.org"><img src="images/more.png" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://api.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -405,7 +410,7 @@
 					<li><img src="images/facebook.png" title="facebook"/></li>
 					<li><img src="images/flickr.png" title="flickr"/></li>
 					<li><img src="images/rss.png" title="rss"/></li>
-					<li><img src="images/delicious.png" title="delicious"/></li>
+					<li><img src="images/delicious.png" title="delicious" alt=""/></li>
 				</ul>
 			</div>
 		</div>
