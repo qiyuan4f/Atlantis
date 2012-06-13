@@ -27,15 +27,14 @@ body:before {
 .clearfix {display: block;}
 
 /*头部内容样式*/
-#head{width:1000px; margin:0 auto;}
-.logo{ margin-left:16px;}
+#head{width:960px; margin:0 auto;}
 .about{float:right;width:300px;text-align:right;}
 .search{width:260px;float:right;margin-top:20px;}
 .search-text{width:190px;height:24px;border:1px #cccccc solid;padding-left:2px;}
 .search-button{width:50px;height:24px;margin-left:10px;font-size:1em;line-height:20px;float:right;}
 
 /*内容部分样式*/
-#content{width:950px;height:auto;margin:0 auto}
+#content{width:960px;height:auto;margin:0 auto}
 .help{width:100%;height:36px;background:url(../images/banner_2.png) repeat-x;margin-top:20px;margin-right:60px}
 .help .link{color:white;float:right;padding-right:10px;line-height:36px;}
 .help h1{color:white;padding-left:10px;line-height:36px;text-align:left;font-family:"黑体"}
@@ -72,15 +71,14 @@ body:before {
 .system-vps{background:url("../images/icon.png") -1540px 0}
 
 .feature-list{width:100%;height:auto;text-align:left}
-.feature-list li{width:100%;clear:both;padding:10px 10px 0px 10px;}
-.feature-list img{margin-right:20px}
-.feature-list h1{font-family:"黑体"}
-.feature-list p{width:480px;height:auto;line-height:20px;margin:12px 0;overflow:auto;}
-.feature-list h5{width:420px;line-height:20px;margin:10px 0px;background:#e4edf1;text-align:center}
+.feature-list li{width:100%;clear:both;}
+.feature-list h1{font-family:"黑体";padding-top:20px}
+.feature-list p{width:460px;height:auto;line-height:20px;overflow:auto;margin:10px 0;}
+.feature-list h5{width:460px;height:40px;line-height:40px;background:#e5eff2;text-align:center;border-radius:3px;margin-bottom:10px}
+.feature-color {line-height:20px;background:#e6ffd8;border-radius:5px;display:block;padding:10px;margin:6px 0}
 
-.category {line-height:12px;text-align:right;text-decoration:none;position:relative;bottom:-10px;}
-
-.category img{margin-right:4px;vertical-align:middle;}
+.category {text-align:right;}
+.category img{margin-right:4px;}
 
 .friend-link{width:100%;height:auto;}
 .friend-link li{height:32px;line-height:32px;float:right;font-size:14px;font-weight:bold;color:#5599ff;padding-left:10px;cursor:pointer}
