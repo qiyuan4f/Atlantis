@@ -75,7 +75,7 @@ body:before {
 .feature-list h1{font-family:"黑体";padding-top:20px}
 .feature-list p{width:460px;height:auto;line-height:20px;overflow:auto;margin:10px 0;}
 .feature-list h5{width:460px;height:40px;line-height:40px;background:#e5eff2;text-align:center;border-radius:3px;margin-bottom:10px}
-.feature-color {line-height:20px;background:#e6ffd8;border-radius:5px;display:block;padding:10px;margin:6px 0}
+.feature-color {line-height:20px;background:#e3f2e7;border-radius:5px;display:block;padding:10px;margin:6px 0;color:#36361D}
 
 .category {text-align:right;}
 .category img{margin-right:4px;}
