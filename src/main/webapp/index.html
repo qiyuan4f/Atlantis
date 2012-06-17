@@ -64,22 +64,22 @@
 
 <body>
 <div id="global-wrapper">
+
+<div id="head-bg">
 	<div id="head">
 		<p class="about">
-			<a class="blue bold"  href="#">注册</a> |
-			<a class="bold"  href="#">登录</a> |
-			<a class="bold" href="#">关于</a>
+			<a class="blue bold" href="#">注册</a>
+			<a href="#">登录</a>
+			<a href="about/index.html">关于</a>
+			<label>
+				<input class="search-text" type="text"/>
+			</label>
 		</p>
-		<div class="search clear">
-            <label>
-                <input class="search-text" type="text"/>
-            </label>
-            <input class="search-button" type="button" value="搜索"/>
-		</div>
-		<img src="images/logo.png"  class="logo" alt="" />
+		<img src="images/logo.png" class="logo" alt="" />
 	</div>
 	<div class="line"></div>
-	<div id="global-main" class="clearfix">
+</div>
+<div id="global-main" class="clearfix">
 		<div id="content">
 			<div class="help">
 				<a class="link"  href="#">帮助</a>
@@ -421,13 +421,48 @@
 		</div>
 	</div>
 </div>
-<div id="global-footer">
-	<div class="footer-bg">
-		<div class="footer-wrapper">
-			<div class="footer-title"> </div>
-			<div class="footer-copyright-wrapper">
-				<div class="footer-copyright"> <span>地址：浙江省杭州市浙江大学 邮编：310000</span> <span>技术支持：浙江大学CCNT实验室</span> <span>Copyright &copy; 2012 CCNT. All rights reserved. 浙江大学CCNT实验室版权所有.</span> </div>
-			</div>
+<div id="footer-category">
+	<ul class="us-more">
+		<li>
+			<h4>关于我们</h4>
+			<ul>
+				<li><a href="index.html">概览</a></li>
+				<li><a href="facts.html">我们是谁</a></li>
+				<li><a href="product.html">我们致力于</a></li>
+				<li><a href="philosophy.html">我们信仰</a></li>
+			</ul>
+		</li>
+		<li>
+			<h4>工作</h4>
+			<ul>
+				<li><a href="facts.html">加入我们</a></li>
+				<li><a href="facts.html">工作环境</a></li>
+				<li><a href="facts.html">我们的位置</a></li>
+			</ul>
+		</li>
+		<li>
+			<h4>文档</h4>
+			<ul>
+				<li><a href="#">帮助文档</a></li>
+				<li><a href="#">开发API</a></li>
+			</ul>
+		</li>
+		<li>
+			<h4>联系我们</h4>
+			<ul>
+				<li><a href="#">最新动态</a></li>
+				<li><a href="#">合作伙伴</a></li>
+				<li><a href="facts.html">联系方式</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div id="footer-global">
+	<div class="footer-logo">
+		<img class="align-left" src="images/gfg_footer.png" alt="" />
+		<div class="footer-copyright">
+			<p>Copyright © 2012 ccnt lab.All rights reserved</p>
+			<a href="#">Terms of Service</a><a href="#">Privacy</a> <a href="#">Security</a>
 		</div>
 	</div>
 </div>

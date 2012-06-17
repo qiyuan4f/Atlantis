@@ -3,7 +3,7 @@
 html, body, from {height: 100%;}
 body{min-width:1200px;}
 #global-wrapper {min-height: 100%;}
-#global-main {padding-bottom:110px; overflow:auto}  /* 必须使用和footer相同的高度 */
+#global-main {padding-bottom:20px; overflow:auto}  /* 必须使用和footer相同的高度 */
 #global-footer {position:relative; margin-top:-110px; height: 110px; clear:both;}
 
 
@@ -26,12 +26,13 @@ body:before {
 * html .clearfix { height: 1%;}
 .clearfix {display: block;}
 
-/*头部内容样式*/
-#head{width:960px; margin:0 auto;}
-.about{float:right;width:300px;text-align:right;}
-.search{width:260px;float:right;margin-top:20px;}
-.search-text{width:190px;height:24px;border:1px #cccccc solid;padding-left:2px;}
-.search-button{width:50px;height:24px;margin-left:10px;font-size:1em;line-height:20px;float:right;}
+/*头部样式*/
+#head-bg{background:#f7f7f7}
+#head{width:960px; margin:0 auto;height:60px;}
+.about{float:right;width:400px;height:60px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;}
+.about a:hover{color:blue;text-decoration:none;cursor:pointer}
+.about a {padding:0 5px}
+.search-text{width:160px;height:20px;border:1px #bbb solid;padding-left:2px;border-radius:10px;background:url(../images/search.png) no-repeat;padding-left:24px}
 
 /*内容部分样式*/
 #content{width:960px;height:auto;margin:0 auto}
@@ -89,10 +90,16 @@ body:before {
 hr{border:1px solid #ebe9c6;background:#ebe9c6;}
 .line{width:100%;height:1px;background:#bbb}
 
+
 /* 底部版权部分的样式 */
-.footer-bg { width:100%; height:106px; background:url(../images/footer-bg.png) 0 -5px; }
-.footer-wrapper { display:inline-block; *display:inline; zoom:1; height:100% }
-	.footer-title { float:left; width:203px; height:106px; background:url(../images/footer-title.jpg) center no-repeat}
-	.footer-copyright-wrapper { float:left; margin-left:15px }
-		.footer-copyright { clear:both; height:106px; display:table-cell; *display:inline; vertical-align:middle}
-			.footer-copyright span { *position:relative; *top:50%; display:block; text-align:left; }
+#footer-category{width:100%;min-height:180px;background:#f8f8f8;border-top:2px solid #e0e0e0;border-bottom:1px solid #e0e0e0;}
+#footer-global{width:100%;height:60px;border-bottom:2px solid #e0e0e0;overflow:hidden;}
+.us-more{width:960px;margin:0 auto;padding-top:20px;}
+.us-more li{width:200px;display:block;float:left;line-height:20px;font-size:12px;padding-right:40px;}
+.us-more li a{color:#4e86dd}
+.us-more h4{border-bottom:1px solid #e0e0e0;margin-bottom:5px;padding-bottom:5px;width:150px;color:#8c8c8c}
+
+.footer-logo{width:960px;margin:0 auto}
+.footer-logo img{margin-top:10px;margin-right:60px}
+.footer-copyright{line-height:18px;padding-top:6px;}
+.footer-copyright a{color:blue;padding-right:10px}
