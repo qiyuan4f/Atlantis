@@ -31,6 +31,7 @@ margin-top:-32767px;/
 hr{border:1px solid #ebe9c6;background:#ebe9c6;}
 .line{width:100%;height:1px;background:#e0e0e0}
 a:hover{color:blue;}
+.red{color:red}
 
 /*头部样式*/
 #head-bg{background:#efefef}
@@ -48,13 +49,17 @@ a:hover{color:blue;}
 .direct-go{background:url(../images/direct-go.png) no-repeat;height:28px;padding-left:10px}
 
 .nav{width:100%;height:230px;background:black;color:white;}
-.banner{width:960px;height:230px;margin:0 auto;background:url("../images/banner.jpg") no-repeat right;}
-.nav-word{width:500px;height:170px;float:left;font-size:14px;font-family:"黑体";}
+.banner{width:960px;height:230px;margin:0 auto;background:url("../images/banner.png") no-repeat right;}
+.nav-word{width:500px;height:195px;float:left;font-size:14px;font-family:"黑体";}
 .nav-word h1{font-size:2em;line-height:40px;padding-top:10px;}
 .nav-word p{line-height:30px;white-space:pre-line}
-.nav-menu{display:block;font-size:1.2em;width:50%}
-.nav-menu li{line-height:30px;float:left;padding-left:10px}
+.nav-menu{display:block;font-size:1.2em;height:30px;}
+.nav-menu li{line-height:30px;float:left;margin-left:5px;text-align:center}
 
+.nav-bg{background:url(../images/nav.png) no-repeat;}
+.nav-view{background-position:0 0;width:50px;}
+.nav-who{background-position:-50px 0;width:70px;}
+.nav-do{background-position:-120px 0;width:80px;}
 /*内容部分样式*/
 .content-wrapper{width:960px;margin:0 auto;text-align:left;padding-top:10px;}
 .summary{padding:10px 0;width:100%;}
@@ -68,6 +73,8 @@ a:hover{color:blue;}
 .menu-content p{line-height:30px;overflow:hidden;height:30px;}
 .date{font-size:10px;line-height:24px;padding-right:4px;}
 .menu_help{line-height:22px;overflow:hidden;cursor:pointer}
+.menu a{color:#a9a3a1}
+.menu a:hover{color:blue;}
 
 .menu-nav-bg{background:url("../images/icon_menu.png") no-repeat;}
 .menu-nav-help{background-position: 0 0;}
@@ -78,13 +85,12 @@ a:hover{color:blue;}
 .list li{display:block;width:100%;text-align:center;background:white;}
 .list li a{width:100%;height:24px;line-height:24px;display:block;border-bottom:1px solid #ddd;}
 
-.content{width:630px;padding:0 10px;}
-.content-bg{width:900px;margin:0 auto;}
+.content{width:630px;padding:0 10px;margin:0 auto;}
 .info{width:96%;height:36px;margin:10px 0}
 .info li{width:140px;display:block;text-align:left;float:left;}
-.info span {width:32px;height:32px;display:block;float:left;margin-right:6px;}
+.info span {display:block;float:left;}
 
-.info-bg{background:url(../images/fact.png) no-repeat center}
+.info-bg{background:url(../images/fact.png) no-repeat center;width:32px;height:32px;margin-right:8px}
 .info-location{background-position:0 0}
 .info-date{background-position:-32px 0;}
 .info-team{background-position:-64px 0;}
