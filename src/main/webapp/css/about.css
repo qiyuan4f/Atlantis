@@ -54,9 +54,9 @@ a:hover{color:blue;}
 .nav{width:100%;height:230px;background:black;color:white;}
 .banner{width:960px;height:230px;margin:0 auto;background:url("../images/banner.png") no-repeat right;font-family:"黑体";}
 .nav-word{width:500px;height:200px;float:left;font-size:14px;}
-.nav-word h1{font-size:2em;line-height:30px;padding-top:10px;}
-.nav-word p{line-height:25px;white-space:pre-line}
-.nav-menu{display:block;font-size:1em;height:30px;}
+.nav-word h1{font-size:2em;line-height:30px;padding-top:15px;padding-bottom: 15px}
+.nav-word p{line-height:25px;}
+.nav-menu{display:block;font-size:14px;height:30px;}
 .nav-menu li{line-height:30px;float:left;text-align:center;color:black;}
 
 .nav-unclick{background:url(../images/nav.png) no-repeat;width:80px;margin-left:-10px}
@@ -80,7 +80,7 @@ a:hover{color:blue;}
     -o-text-overflow:ellipsis; /*适用opera*/
     -moz-binding: url('ellipsis.xml#ellipsis');/*适用火狐(firefox通过XUL实现效果)*/}
 
-.date{line-height:20px;float:right;clear:right;font-size:4px;color:#c9c6c6}
+.date{line-height:20px;float:right;clear:right;font-size:10px;color:#c9c6c6}
 
 .join-bg{background:url("../images/join_black.png") no-repeat;height:16px;padding-left:20px}
 .join-blog{background-position:0 0;}
@@ -117,7 +117,7 @@ a:hover{color:blue;}
 .about-info img{border:1px solid #f2f2f2;margin-bottom:8px;width:195px;height:135px}
 .us, .product{width:100%;height:auto;margin-top:15px}
 .product h3{padding:10px 0;}
-.product img{margin-right:10px;border:1px solid #ccc;width:180px;height:95px}
+.product img{padding-right:6px;border:1px solid #ccc;width:160px;height:90px}
 
 .content h2{border-bottom:1px solid #e0e0e0;padding:10px 0 5px 0}
 
