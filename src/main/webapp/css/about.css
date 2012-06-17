@@ -30,10 +30,9 @@ margin-top:-32767px;/
 .align-left{float:left;}
 .align-right{float:right;}
 hr{border:1px solid #ebe9c6;background:#ebe9c6;}
-.line{width:100%;height:1px;background:#e0e0e0}
+.line{width:100%;height:1px;background:#e0e0e0;margin:5px 0}
 a:hover{color:blue;}
-.red{color:red}
-.bold{font-weight:bold;}
+
 /*头部样式*/
 #head-bg{background:#efefef}
 #head{width:960px; margin:0 auto;height:60px;}
@@ -55,7 +54,7 @@ a:hover{color:blue;}
 .banner{width:960px;height:230px;margin:0 auto;background:url("../images/banner.png") no-repeat right;font-family:"黑体";}
 .nav-word{width:500px;height:200px;float:left;font-size:14px;}
 .nav-word h1{font-size:2em;line-height:30px;padding-top:10px;}
-.nav-word p{line-height:25px;white-space:pre-line}
+.nav-word p{line-height:25px;}
 .nav-menu{display:block;font-size:1em;height:30px;}
 .nav-menu li{line-height:30px;float:left;text-align:center;color:black;}
 
@@ -68,13 +67,13 @@ a:hover{color:blue;}
 .summary h1{line-height:30px;padding-bottom:5px;border-bottom:solid 2px #efefef;font-family:"黑体";font-weight:normal;}
 
 .menu-bg, .content{margin-top:10px}
-.menu-bg{width:210px;border:5px solid #fefefe;float:right;margin-left:50px}
+.menu-bg{width:210px;border:5px solid #fefefe;float:right;}
 .menu{width:200px;border:5px solid #EFEFEF;color:#a9a3a1;}
 .menu-content{padding:10px 10px; background:#fbfbfb; border-left: solid 1px #D8D8D8; border-right: solid 1px #D8D8D8;}
 .menu-content.first{border-top: solid 1px #D8D8D8;}
 .menu-content.last{border-bottom: solid 1px #D8D8D8;}
 .menu-content h4{line-height:18px;height:18px;padding-left:20px;color:#6c6361}
-.menu-content p{line-height:16px;width:180px;overflow:hidden;white-space:nowrap;margin:6px 0;
+.menu-content p{line-height:16px;width:180px;overflow:hidden;margin:6px 0;
     /*文本溢出用"..."表示*/
     text-overflow:ellipsis; /*适用IE*/
     -o-text-overflow:ellipsis; /*适用opera*/
@@ -97,9 +96,11 @@ a:hover{color:blue;}
 .menu-nav-join{background-position: 0 -18px;}
 .menu-nav-contect{background-position:0 -36px;}
 
+.content{width:700px}
 .list{width:100%;border:1px solid #ddd;}
 .list li{display:block;width:100%;text-align:center;background:white;}
-.list li a{width:100%;height:24px;line-height:24px;display:block;border-bottom:1px solid #ddd;}
+.list li.last{border-bottom:1px solid #ddd;}
+.list li a{width:100%;height:24px;line-height:24px;display:block;}
 
 .info{width:96%;height:36px;margin:10px 0}
 .info li{width:140px;display:block;text-align:left;float:left;}
@@ -111,23 +112,23 @@ a:hover{color:blue;}
 .info-team{background-position:-64px 0;}
 .info-get{background-position:-96px 0;}
 
-.detail{line-height:16px;height:auto;white-space:pre-line;}
-
+.detail{line-height:18px;height:auto;padding:10px 0}
 .about-info{width:195px;float:left;line-height:14px;margin-right:20px;}
-.about-info img{border:1px solid #f2f2f2;margin-bottom:8px;width:195px;height:135px}
+.about-info img{border:1px solid #f2f2f2;margin-bottom:8px;width:200px;height:140px}
 .us, .product{width:100%;height:auto;margin-top:15px}
 .product h3{padding:10px 0;}
-.product img{margin-right:10px;border:1px solid #ccc;width:180px;height:95px}
+.product img{margin-right:10px;border:1px solid #ccc;width:160px;height:100px}
 
 .content h2{border-bottom:1px solid #e0e0e0;padding:10px 0 5px 0}
 
-.location{width:100%;height:auto;padding-top:10px;line-height:28px}
-.location img{padding-right:20px}
+.location{width:100%;height:auto;padding-bottom:15px;line-height:18px}
+.location h3{padding-bottom:5px}
+.location img{margin-right:20px;width:200px;height:140px;border:1px solid #ccc;}
 
-.us h4{padding-bottom:5px}
-.team-list{width:100%;text-align:center;overflow:hidden}
-.team-list li{width:120px;height:120px;display:block;margin-right:20px;float:left;margin-bottom:10px}
-.team-info{width:120px;height:35px;position:relative;left:0;bottom:38px;background:#ddd;}
+
+.team-list{width:100%;text-align:center;overflow:hidden;line-height:18px;padding:10px 0}
+.team-list li{width:160px;height:160px;display:block;margin-right:10px;float:left;margin-bottom:10px;}
+.team-info{width:160px;height:40px;position:relative;left:0;bottom:40px;background:#ddd;}
 
 .transparent{filter:alpha(opacity=0);/*支持 IE 浏览器*/
              -moz-opacity:0.40;/*支持 FireFox 浏览器*/
@@ -149,5 +150,5 @@ a:hover{color:blue;}
 
 .footer-logo{width:960px;margin:0 auto}
 .footer-logo img{margin-top:10px;margin-right:80px}
-.footer-copyright{line-height:10px;white-space:pre-line;padding-top:6px;}
+.footer-copyright{line-height:18px;padding-top:16px;}
 .footer-copyright a{color:blue;padding-right:10px}
