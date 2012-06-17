@@ -7,11 +7,11 @@ body { background-color: #ffffff; color: #000000; }
 nobr { white-space: nowrap; }
 body { padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; }
 
-body { font: 12px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-button { font: 12px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-input { font: 12px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-select { font: 12px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-textarea { font: 12px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
+body { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
+button { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
+input { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
+select { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
+textarea { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
 h1 { font-size: 18px; }
 h2 { font-size: 16px; }
 h3 { font-size: 14px; }
