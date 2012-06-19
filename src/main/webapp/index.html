@@ -68,9 +68,9 @@
 <div id="head-bg">
 	<div id="head">
 		<p class="about">
-			<a class="blue bold" href="#">注册</a>
-			<a href="#">登录</a>
-			<a href="about/index.html">关于</a>
+			<a class="blue bold" href="#" title="注册">注册</a>
+			<a href="#" title="登录">登录</a>
+			<a href="about/index.html" title="关于">关于</a>
 			<label>
 				<input class="search-text" type="text"/>
 			</label>
@@ -82,7 +82,7 @@
 <div id="global-main" class="clearfix">
 		<div id="content">
 			<div class="help">
-				<a class="link"  href="#">帮助</a>
+				<a class="link"  href="#" title="帮助">帮助</a>
 				<h1>概述</h1>
 			</div>
 			<div class="summary">
@@ -126,8 +126,8 @@
 				<div class="clear"><hr/></div>
 			</div>
 			<div class="detail" id="project">
-				<ul class="summary-nav align_left" onclick="fast_nav(event)">
-					<li class="system-title" href="#"></li>
+				<div class="system-title"></div>
+				<ul class="summary-nav" onclick="fast_nav(event)">
 					<li class="system-thumbs system-pms" href="http://pms.ccntgrid.org" title="项目管理系统"></li>
 					<li class="system-thumbs system-cr" href="http://cr.ccntgrid.org:8000" title="代码评审平台"></li>
 					<li class="system-thumbs system-ci" href="http://ci.ccntgrid.org" title="持续集成平台"></li>
@@ -148,7 +148,7 @@
                                 <span class="feature-color"> PMS主要功能包含基于角色的权限控制、项目活动、新闻、讨论区、版本库、文档管理以及便捷的文件分享。</span>
                                 PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<strong>工作台</strong>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<strong>Check邮件</strong>或者<strong>直接登陆到您的工作台</strong>处理和分配项目任务。
                             </p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png"  alt=""/></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org" title="more"><img src="images/more.png"  alt=""/></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -165,7 +165,7 @@
 								<span class="feature-color"> CR主要功能包括基于Git的代码评审机制、基于角色的权限控制、代码差异查看以及分支管理合并。</span>
 								CR的设计基于Git分布式版本控制系统，当开发者向版本库提交代码，系统会自动将其提交到评审平台（代替默认直接提交到版本库中的操作），经过既定的审核流程后代码会被合并到版本库中，并且会在CI上执行一次自动构建。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -182,7 +182,7 @@
 								<span class="feature-color"> CI主要功能包括基于角色的权限控制、可定制的构建部署以及自动化测试。</span>
 								CI是面向程序的设计，在用户体验上不足，但是有着强大的定制扩展支持，因此由SCM直接管理，不对普通用户开发配置。管理员可以根据需要定制构建的周期、条件以及方式，适应软件的自动发布，提高部署发布效率。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://ci.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://ci.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -199,7 +199,7 @@
 								<span class="feature-color"> VPS主要功能包括虚拟主机管理、虚拟主机迁移、快照服务以及3389远程控制服务。</span>
 								当项目生命周期中需要使用服务器搭建实验环境就通过简单的一些授权使用VPS，她能够快速的虚拟化生成所需的实验硬件环境，并且后期管理变更十分方便。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -227,7 +227,7 @@
 								<span class="feature-color"> PMS主要功能包含基于角色的权限控制、项目活动、新闻、讨论区、版本库、文档管理以及便捷的文件分享。</span>
 								PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<B>工作台</B>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<B>Check邮件</B>或者<B>直接登陆到您的工作台</B>处理和分配项目任务。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://pms.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -244,7 +244,7 @@
 								<span class="feature-color"> Gmail主要功能包括支持传统的smtp/pop3服务、imap即时邮件服务以及在线的web mail服务。</span>
 								Gmail是面向用户的设计，有良好的用户体验，优美的UI界面，您可以通过web mail或者熟悉的邮件客户端方便的管理您的日常邮件。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://mail.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://mail.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -261,7 +261,7 @@
 								<span class="feature-color"> IM主要功能包括在线消息通讯、离线消息留言、文件传输、语音会议、联系人/群组管理以及基于邮件的通知提醒服务。</span>
 								您可以通过统一身份认证ID登陆IM，与实验室内所有成员沟通、协作，享受无限的即时通讯服务。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://im.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://im.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -290,7 +290,7 @@
 								<span class="feature-color"> PMS主要功能包含基于角色的权限控制、项目活动、新闻、讨论区、版本库、文档管理以及便捷的文件分享。</span>
 								PMS是面向用户的设计，系统会将您所关注的信息汇集到用户<strong>工作台</strong>，并且会通过EMAIL向您发送最新的变更情报。您所需要做的就是<strong>Check邮件</strong>或者<strong>直接登陆到您的工作台</strong>处理和分配项目任务。
 							</p>
-							<p class="category"><img src="images/external.png" alt="" /><a href="http://pms.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt="" /><a href="http://pms.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -307,7 +307,7 @@
 								<span class="feature-color"> GFTP主要功能包括基于FTP的文件传输服务、文件分享、QoS以及目录检索。</span>
 								GFTP是您日常办公以及项目开发过程中不可或缺的一部分，您可以在GFTP主站下载操作系统镜像、软件、文档等整理的各类资源；同时，您也可以通过上传与大家分享您所拥有的有价值的资源。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="ftp://ftp.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="ftp://ftp.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -324,7 +324,7 @@
 								<span class="feature-color"> SVN主要功能包括基于用户名/密码的安全控制、便捷易用的变更管理。</span>
 								基于集中式设计的SVN，非常容易上手，简单的提交、更新、编辑冲突即可完成日常的工作，实现简单的版本管理控制，适合刚接触版本控制的同学使用。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://csvn.ccntgrid.org:3343"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://csvn.ccntgrid.org:3343" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -341,7 +341,7 @@
 								<span class="feature-color">Git主要功能包括基于SSH的安全控制、灵活的分支/里程碑管理。</span>
 								基于分布式设计的Git，在学习路线上较为陡峭，复杂而又繁多的命令，但是其优秀的设计思想，使Git灵活而又富有扩展性。在您接受她之后，就会体会到一种秀丽的异域风采。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000/gitweb"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://cr.ccntgrid.org:8000/gitweb" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -386,7 +386,7 @@
 								<span class="feature-color">demo主要功能包括软件功能示例、算法程序示例以及前端界面展示。</span>
 								demo是一个软件虚拟实验室，囊括了非常多常用的程序demo以及实验室成员在学习过程中积累分享的实验程序；demo同样也是在日常研究和学习过程中必不可少的一部分。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://demo.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://demo.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -403,7 +403,7 @@
 								<span class="feature-color">API开放平台主要功能包括提供API文档的在线浏览、检索和打包下载。</span>
 								API开放平台是在开发过程中一个得力的助手，能帮助您快速的找到相关的接口描述和程序示例；除此之外，您还可以通过打包下载功能得到离线版的API文档，让您能够随时、随地查阅API。
 							</p>
-							<p class="category"><img src="images/external.png" alt=""/><a href="http://api.ccntgrid.org"><img src="images/more.png" alt="" /></a></p>
+							<p class="category"><img src="images/external.png" alt=""/><a href="http://api.ccntgrid.org" title="more"><img src="images/more.png" alt="" /></a></p>
 						</div>
 						<div class="line clear"></div>
 					</li>
@@ -426,33 +426,33 @@
 		<li>
 			<h4>关于我们</h4>
 			<ul>
-				<li><a href="about/index.html">概览</a></li>
-				<li><a href="about/facts.html">我们是谁</a></li>
-				<li><a href="about/product.html">我们致力于</a></li>
-				<li><a href="about/philosophy.html">我们信仰</a></li>
+				<li><a href="about/index.html" title="概览">概览</a></li>
+				<li><a href="about/facts.html" title="我们是谁">我们是谁</a></li>
+				<li><a href="about/product.html" title="我们致力于">我们致力于</a></li>
+				<li><a href="about/philosophy.html" title="我们信仰">我们信仰</a></li>
 			</ul>
 		</li>
 		<li>
 			<h4>工作</h4>
 			<ul>
-				<li><a href="about/facts.html">加入我们</a></li>
-				<li><a href="about/facts.html">工作环境</a></li>
-				<li><a href="about/facts.html">我们的位置</a></li>
+				<li><a href="about/facts.html" title="加入我们">加入我们</a></li>
+				<li><a href="about/facts.html" title="工作环境">工作环境</a></li>
+				<li><a href="about/facts.html" title="我们的位置">我们的位置</a></li>
 			</ul>
 		</li>
 		<li>
 			<h4>文档</h4>
 			<ul>
-				<li><a href="#">帮助文档</a></li>
-				<li><a href="#">开发API</a></li>
+				<li><a href="#" title="帮助文档">帮助文档</a></li>
+				<li><a href="#" title="开发API">开发API</a></li>
 			</ul>
 		</li>
 		<li>
 			<h4>联系我们</h4>
 			<ul>
-				<li><a href="#">最新动态</a></li>
-				<li><a href="#">合作伙伴</a></li>
-				<li><a href="about/facts.html">联系方式</a></li>
+				<li><a href="#" title="最新动态">最新动态</a></li>
+				<li><a href="#" title="合作伙伴">合作伙伴</a></li>
+				<li><a href="about/facts.html" title="联系方式">联系方式</a></li>
 			</ul>
 		</li>
 	</ul>

@@ -35,7 +35,7 @@ a:hover{color:blue;}
 .img-border{border:1px solid #e0e0e0;}
 
 /*头部样式*/
-#head-bg{background:#f7f7f7}
+#head-bg{background:#fefefe}
 #head{width:960px; margin:0 auto;height:60px;}
 .about{float:right;width:400px;height:60px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;}
 .about a:hover{color:blue;text-decoration:none;cursor:pointer}
@@ -56,11 +56,12 @@ a:hover{color:blue;}
 .nav-word{width:500px;height:200px;float:left;font-size:14px;}
 .nav-word h1{font-size:2em;line-height:30px;padding-top:15px;padding-bottom: 15px}
 .nav-word p{line-height:25px;}
-.nav-menu{display:block;font-size:14px;height:30px;}
-.nav-menu li{line-height:30px;float:left;text-align:center;color:black;}
+/*
+.nav-menu{display:block;font-size:14px;height:30px}
+.nav-menu li{line-height:30px;float:left;text-align:center;}
 
-.nav-unclick{background:url(../images/nav.png) no-repeat;width:80px;margin-left:-5px}
-.nav-click{background:url(../images/nav_click.png) no-repeat;width:80px;}
+.nav-unclick{background:url(../images/nav.png) no-repeat;width:80px;}
+.nav-click{background:url(../images/nav_click.png) no-repeat;}*/
 
 /*内容部分样式*/
 .content-wrapper{width:960px;margin:0 auto;text-align:left;padding-top:10px;}
@@ -69,18 +70,20 @@ a:hover{color:blue;}
 
 .menu-bg, .content{margin-top:10px}
 .menu-bg{width:210px;border:5px solid #fefefe;float:right;}
-.menu{width:200px;border:5px solid #EFEFEF;color:#a9a3a1;}
+.menu{width:200px;border:5px solid #EFEFEF;}
 .menu-content{padding:10px 10px; background:#fbfbfb; border-left: solid 1px #D8D8D8; border-right: solid 1px #D8D8D8;}
 .menu-content.first{border-top: solid 1px #D8D8D8;}
 .menu-content.last{border-bottom: solid 1px #D8D8D8;}
 .menu-content h4{line-height:18px;height:18px;padding-left:20px;color:#6c6361}
-.menu-content p{line-height:16px;width:160px;overflow:hidden;margin:6px 0;
+
+.menu-list li{line-height:16px;overflow:hidden;margin:6px 0;
     /*文本溢出用"..."表示*/
     text-overflow:ellipsis; /*适用IE*/
     -o-text-overflow:ellipsis; /*适用opera*/
     -moz-binding: url('ellipsis.xml#ellipsis');/*适用火狐(firefox通过XUL实现效果)*/}
-
-.date{line-height:20px;float:right;clear:right;font-size:10px;color:#c9c6c6}
+.menu-list li a{color:#a9a3a1;}
+.menu-list li a:hover{color:blue}
+.date{line-height:16px;float:right;clear:right;font-size:10px;color:#c9c6c6;padding-left:8px}
 
 .join-bg{background:url("../images/join_black.png") no-repeat;height:14px;padding-left:20px}
 .join-blog{background-position:0 0;}
@@ -90,10 +93,6 @@ a:hover{color:blue;}
 .join-help{background-position:0 -56px;}
 .join-text{background-position:0 -70px;}
 
-.menu_help{line-height:22px;overflow:hidden;cursor:pointer}
-.menu a{color:#a9a3a1}
-.menu a:hover{color:blue;}
-
 .menu-nav-bg{background:url("../images/icon_menu.png") no-repeat;}
 .menu-nav-help{background-position: 0 0;}
 .menu-nav-join{background-position: 0 -18px;}
@@ -102,8 +101,8 @@ a:hover{color:blue;}
 .list{width:176px;border:1px solid #ddd;}
 .list li{display:block;background:white;padding-left:5px}
 .list li.last{border-bottom:1px solid #ddd;}
-.list li a{eight:24px;line-height:24px;display:block;text-decoration:none;}
-.list li:hover{border-left:4px solid orange;width:167px;background:#fcfcfc;font-weight:bold}
+.list li a{height:30px;line-height:30px;display:block;text-decoration:none;}
+.list li:hover, .list-visited{border-left:4px solid orange;width:167px;background:#fcfcfc;font-weight:bold}
 
 .content{width:700px}
 .info{width:96%;height:36px;margin:10px 0}
@@ -115,6 +114,13 @@ a:hover{color:blue;}
 .info-date{background-position:-32px 0;}
 .info-team{background-position:-64px 0;}
 .info-get{background-position:-96px 0;}
+
+
+.title-bg{background:url(../images/icon_title.png) no-repeat;display:block;padding-left:23px;height:19px}
+.title-location{background-position:0 0;}
+.title-culture{background-position:0 -19px}
+.title-team{background-position:0 -38px;}
+.title-get{background-position:0 -57px}
 
 .detail{line-height:24px;height:auto;padding:10px 0}
 .about-info{width:195px;float:left;line-height:16px;margin-right:20px;}
@@ -147,7 +153,7 @@ a:hover{color:blue;}
 }
 /* 底部版权部分的样式 */
 #footer-category{width:100%;min-height:180px;background:#f8f8f8;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;}
-#footer-global{width:100%;height:60px;border-bottom:2px solid #e0e0e0;overflow:hidden;}
+#footer-global{width:100%;height:60px;border-bottom:1px solid #e0e0e0;overflow:hidden;}
 .us-more{width:960px;margin:0 auto;padding-top:20px;}
 .us-more li{width:200px;display:block;float:left;line-height:20px;font-size:12px;padding-right:40px;}
 .us-more li a{color:#4e86dd}
