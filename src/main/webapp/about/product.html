@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" href="../css/global.css" type="text/css"/>
 	<link rel="stylesheet" href="../css/about.css" type="text/css"/>
+	<script type="text/javascript" src="../script/js.js"></script>
 	<title>高分网格-我们致力于</title>
 	<!--[if IE 6]>
 	<script type="text/javascript" src="script/png.js"></script>
@@ -68,9 +69,8 @@
 				<div class="menu">
 					<div class="menu-content first">
 						<ul class="list">
-							<li class="last  list-visited"><a href="#personal" title="个人价值">个人价值</a></li>
-							<li class="last"><a href="#business" title="行业价值">行业价值</a></li>
-							<li><a href="#public" title="公众价值">公众价值</a></li>
+							<li onclick="menuClick(this)" class="list-visited"><a href="#achieve" title="我们的成果">我们的成果</a></li>
+							<li onclick="menuClick(this)" class="last"><a href="#value" title="我们的价值">我们的价值</a></li>
 						</ul>
 					</div>
 					<div class="menu-content">
@@ -92,7 +92,7 @@
 				</div>
 			</div>
 			<div class="content align-left">
-				<h2> <a href="#" class="title-bg title-get">我们的成果</a></h2>
+				<h2> <a name="#achieve" class="title-bg title-get">我们的成果</a></h2>
 				<p class="detail">
 					数据服务网格平台面向各种网格资源提供统一寻址、发布注册、搜索发现、集成组合、全局监控、统计分析等功能；面向数据提供综合集成、透明访问、多中心的数据分发调度、多节点的数据分发传输控制与优化等功能；面向用户提供网格身份认证、综合数据搜索、集成数据下载、资源发布订阅等功能，具体包括如下几个方面的功能：
 				</p>
@@ -118,17 +118,17 @@
 				</p>
 
 				<p class="line"></p>
-				<h3><a name="personal">个人价值</a></h3>
+				<h3><a name="value">个人价值</a></h3>
 				<p class="detail">
 					创造就业岗位。以高分网格为基础，从事遥感领域的个人开发者可以利用网格的开放资源（数据和处理能力）平台和发布平台，开发设计自己的遥感应用发布到网格门户中，提供一种收入来源。
 				</p>
 
-				<h3><a name="business">行业价值</a></h3>
+				<h3>行业价值</h3>
 				<p class="detail">
 					节省成本。基于高分网格平台，行业用户可以节省高昂的费用出资建设遥感处理集群、订购遥感数据，直接从平台上获取所需要的资源满足行业加工、生产要求。
 				</p>
 
-				<h3><a name="public">公众价值</a></h3>
+				<h3>公众价值</h3>
 				<p class="detail">
 					公益事业。高分网格的建立之初就考虑了自然灾害预测和应急、交通服务等公众服务。
 					另外，用户不再需要联系多个服务商，来满足日常的地理信息（气象、环境、交通等），直接通过在高分网格平台上统一订阅即可满足日常的需求。

@@ -53,9 +53,9 @@ a:hover{color:blue;}
 
 .nav{width:100%;height:230px;background:black;color:white;}
 .banner{width:960px;height:230px;margin:0 auto;background:url("../images/banner.png") no-repeat right;font-family:"黑体";}
-.nav-word{width:500px;height:200px;float:left;font-size:14px;}
-.nav-word h1{font-size:2em;line-height:30px;padding-top:15px;padding-bottom: 15px}
-.nav-word p{line-height:25px;}
+.nav-word{width:500px;height:230px;float:left;font-size:14px;}
+.nav-word h1{font-size:2.2em;line-height:30px;padding-top:20px;padding-bottom: 30px}
+.nav-word p{line-height:35px;font-size:16px;}
 /*
 .nav-menu{display:block;font-size:14px;height:30px}
 .nav-menu li{line-height:30px;float:left;text-align:center;}
@@ -99,8 +99,8 @@ a:hover{color:blue;}
 .menu-nav-contect{background-position:0 -36px;}
 
 .list{width:176px;border:1px solid #ddd;}
-.list li{display:block;background:white;padding-left:5px}
-.list li.last{border-bottom:1px solid #ddd;}
+.list li{display:block;background:white;padding-left:5px;border-bottom:1px solid #ddd;}
+.list li.last{border-bottom:none}
 .list li a{height:30px;line-height:30px;display:block;text-decoration:none;}
 .list li:hover, .list-visited{border-left:4px solid orange;width:167px;background:#fcfcfc;font-weight:bold}
 
@@ -137,7 +137,7 @@ a:hover{color:blue;}
 .location h3{padding-bottom:5px}
 .location img{margin-right:20px;width:200px;height:140px;border:1px solid #ccc;}
 
-.team-list{width:100%;text-align:center;overflow:hidden;line-height:18px;padding:10px 0}
+.team-list{width:100%;text-align:center;line-height:18px;padding:10px 0}
 .team-list li{width:160px;height:160px;display:block;margin-right:10px;float:left;margin-bottom:10px;}
 .team-info{width:160px;height:40px;position:relative;left:0;bottom:40px;background:#ddd;}
 
