@@ -11,6 +11,7 @@
 	<bean
 		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
 		<property name="order" value="1" />
+		<property name="useDefaultSuffixPattern" value="false"/>
 	</bean>
 
 	<!-- Hessian 启动BeanNameMapping 映射功能 -->
@@ -96,7 +97,7 @@
 	<!-- 配置异常信息视图解析器 -->
 	<bean id="exceptionResolver"
 		  class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
-		<property name="defaultErrorView" value="/exception/" />
+		<property name="defaultErrorView" value="/error" />
 		<property name="exceptionMappings">
 			<props>
 				<prop key="java.sql.SQLException">error-database</prop>
