@@ -1,0 +1,6 @@
+<html>
+<body>
+	For Test Message: ${str}
+	Date : $date.medium
+</body>
+</html>

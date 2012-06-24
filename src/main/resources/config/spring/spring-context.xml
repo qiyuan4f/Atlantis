@@ -12,14 +12,10 @@
 	<context:property-placeholder location="classpath:config/properties/*.properties" />
 	
 	<!-- 扫描所有Spring Bean -->
-	<context:component-scan base-package="org.gfg.portal"></context:component-scan>
+	<context:component-scan base-package="org.ccntgrid.portal"></context:component-scan>
 	
 	<!-- 加载其他Spring配置文件 -->
 	<import resource="spring-mvc.xml" />
 	<!-- <import resource="spring-db.xml" /> -->
 	<import resource="spring-security.xml" />
-	<import resource="spring-remoting-search.xml" />
-	<import resource="spring-remoting-umas.xml" />
-	<import resource="spring-remoting-mds.xml" />
-	<import resource="spring-remoting-order.xml" />
 </beans>
