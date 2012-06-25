@@ -4,8 +4,6 @@ html, body, from {height: 100%;}
 body{min-width:1200px;}
 #global-wrapper {min-height: 100%;}
 #global-main {padding-bottom:20px; overflow:auto}  /* 必须使用和footer相同的高度 */
-#global-footer {position:relative; margin-top:-110px; height: 110px; clear:both;}
-
 
 /*Opera Fix*/
 body:before {
@@ -28,16 +26,16 @@ body:before {
 
 /*头部样式*/
 #head-bg{background:#fefefe}
-#head{width:960px; margin:0 auto;height:60px;}
-.about{float:right;width:400px;height:60px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;}
+#head, #content,.footer-logo,.us-more{width:960px; margin:0 auto;}
+#head{height:60px;}
+.about{width:400px;height:60px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;float:right;}
 .about a:hover{color:blue;text-decoration:none;cursor:pointer}
 .about a {padding:0 5px}
-.search-text{width:160px;height:20px;border:1px #bbb solid;border-radius:10px;background:url(../images/search.png) no-repeat;padding-left:24px}
+.search-text{width:160px;height:20px;padding-left:24px;border:1px #bbb solid;border-radius:10px;background:url(../images/search.png) no-repeat}
 
 /*内容部分样式*/
-#content{width:960px;height:auto;margin:0 auto}
 .help{width:100%;height:36px;background:url(../images/banner_2.png) repeat-x;margin-top:20px;margin-right:60px}
-.help .link{color:white;float:right;padding-right:10px;line-height:36px;}
+.help .link{color:white;padding-right:10px;line-height:36px;float:right;}
 .help h1{color:white;padding-left:10px;line-height:36px;text-align:left;font-family:"黑体"}
 
 .summary{width:100%;height:170px;margin-bottom:20px;background:url(../images/banner_bg.png) repeat-x;}
@@ -45,36 +43,35 @@ body:before {
 .summary-text{width:345px;height:110px;background:#f8fcff;float:right;margin:26px 30px 0 0;border:1px #d0d7da solid;text-align:left;padding:12px 12px;overflow:hidden;}
 
 .content-wrapper, .detail{width:100%;height:auto;}
-
 .nav {width:100%;height:160px;overflow:hidden;}
 .nav li{width:224px;height:160px;float:left;padding-right:12px;}
 .nav img{width:206px;height:142px;display:block;margin-left:8px}
 .nav-button{width:224px;height:93px;background:url(../images/button.png) no-repeat 0 0;display:block;color:#5599ff;position:relative;left:0px;bottom:75px;cursor:pointer}
 .nav-button h2{padding-top:15px; font-family:"黑体"}
-.nav-button p{color:gray;;height:20px;margin:0 auto;overflow:hidden; padding-left: 5px; padding-right: 5px}
+.nav-button p{color:gray;height:20px;margin:0 auto;overflow:hidden; padding:0 5px;}
 
 .summary-nav{width:100%;height:130px}
 .summary-nav li{display:block;float:left;margin:10px 10px 0 10px;cursor:pointer}
 
 .system-title{width:39px;height:112px;background:url(../images/channel.png);display:block;float:left;margin-top:9px}
-.system-thumbs{width:140px;height:112px;}
-.system-pms{background:url(../images/icon.png) 0 0}
-.system-cr{background:url(../images/icon.png) -140px 0}
-.system-ci{background:url(../images/icon.png) -280px 0}
-.system-git{background:url(../images/icon.png) -420px 0}
-.system-svn{background:url(../images/icon.png) -560px 0}
-.system-ftp{background:url(../images/icon.png) -700px 0}
-.system-email{background:url(../images/icon.png) -840px 0}
-.system-im{background:url(../images/icon.png) -980px 0}
-.system-wiki{background:url(../images/icon.png) -1120px 0}
-.system-demo{background:url(../images/icon.png) -1260px 0}
-.system-api{background:url(../images/icon.png) -1400px 0}
-.system-vps{background:url("../images/icon.png") -1540px 0}
+.system-thumbs{background:url(../images/icon.png) no-repeat;width:140px;height:112px;}
+.system-pms{background-position:0 0;}
+.system-cr{background-position: -140px 0;}
+.system-ci{background-position:-280px 0;}
+.system-git{background-position:-420px 0;}
+.system-svn{background-position:-560px 0;}
+.system-ftp{background-position:-700px 0;}
+.system-email{background-position:-840px 0;}
+.system-im{background-position:-980px 0;}
+.system-wiki{background-position:-1120px 0;}
+.system-demo{background-position:-1260px 0;}
+.system-api{background-position:-1400px 0;}
+.system-vps{background-position:-1540px 0;}
 
 .feature-list{width:100%;height:auto;text-align:left}
 .feature-list li{width:100%;clear:both;}
 .feature-list h1{font-family:"黑体";padding-top:20px}
-.feature-list p{width:460px;height:auto;line-height:20px;overflow:auto;margin:10px 0;}
+.feature-list p{width:460px;line-height:20px;overflow:auto;margin:10px 0;}
 .feature-list h5{width:460px;height:40px;line-height:40px;background:#e5eff2;text-align:center;border-radius:3px;margin-bottom:10px}
 .feature-color {line-height:20px;background:#e3f2e7;border-radius:5px;display:block;padding:10px;margin:6px 0;color:#36361D}
 
@@ -92,14 +89,14 @@ hr{border:1px solid #ebe9c6;background:#ebe9c6;}
 
 
 /* 底部版权部分的样式 */
-#footer-category{width:100%;min-height:180px;background:#f8f8f8;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;}
-#footer-global{width:100%;height:60px;border-bottom:1px solid #e0e0e0;overflow:hidden;}
-.us-more{width:960px;margin:0 auto;padding-top:20px;}
+#footer-category, #footer-global,.us-more h4{border-bottom:1px solid #e0e0e0;}
+#footer-category{width:100%;min-height:180px;background:#f8f8f8;border-top:1px solid #e0e0e0;}
+#footer-global{width:100%;height:60px;overflow:hidden;}
+.us-more{padding-top:20px;}
 .us-more li{width:200px;display:block;float:left;line-height:20px;font-size:12px;padding-right:40px;}
 .us-more li a{color:#4e86dd}
-.us-more h4{border-bottom:1px solid #e0e0e0;margin-bottom:5px;padding-bottom:5px;width:150px;color:#8c8c8c}
+.us-more h4{width:150px;margin-bottom:5px;padding-bottom:5px;color:#8c8c8c}
 
-.footer-logo{width:960px;margin:0 auto;}
 .footer-logo img{margin-top:10px;margin-right:60px;float:left;}
 .footer-copyright{line-height:18px;padding-top:6px;}
 .footer-copyright a{color:blue;padding-right:10px}
