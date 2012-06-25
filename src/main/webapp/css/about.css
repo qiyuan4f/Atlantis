@@ -40,7 +40,7 @@ a:hover, .direct li a:hover, {color:blue;}
 .about{width:400px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;float:right;}
 .about a:hover{text-decoration:none;color:blue;}
 .about a{padding:0 5px}
-.search-text{width:160px;height:20px;border:1px #bbb solid;padding-left:2px;padding-left:24px;border-radius:10px;background:url(../images/search.png) no-repeat;}
+.search-text{width:160px;height:20px;border:1px #bbb solid;padding-left:2px;padding-left:24px;border-radius:10px;background:url(../images/comment/search.png) no-repeat;}
 
 /*导航部分样式*/
 #direct-bg{background:url(../images/about/direct-bg.png) repeat-x}

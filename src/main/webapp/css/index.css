@@ -31,14 +31,14 @@ body:before {
 .about{width:400px;height:60px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;float:right;}
 .about a:hover{color:blue;text-decoration:none;cursor:pointer}
 .about a {padding:0 5px}
-.search-text{width:160px;height:20px;padding-left:24px;border:1px #bbb solid;border-radius:10px;background:url(../images/search.png) no-repeat}
+.search-text{width:160px;height:20px;padding-left:24px;border:1px #bbb solid;border-radius:10px;background:url(../images/comment/search.png) no-repeat}
 
 /*内容部分样式*/
-.help{width:100%;height:36px;background:url(../images/banner_2.png) repeat-x;margin-top:20px;margin-right:60px}
+.help{width:100%;height:36px;background:url(../images/index/banner_2.png) repeat-x;margin-top:20px;margin-right:60px}
 .help .link{color:white;padding-right:10px;line-height:36px;float:right;}
 .help h1{color:white;padding-left:10px;line-height:36px;text-align:left;font-family:"黑体"}
 
-.summary{width:100%;height:170px;margin-bottom:20px;background:url(../images/banner_bg.png) repeat-x;}
+.summary{width:100%;height:170px;margin-bottom:20px;background:url(../images/index/banner_bg.png) repeat-x;}
 .summary img{padding-top:19px}
 .summary-text{width:345px;height:110px;background:#f8fcff;float:right;margin:26px 30px 0 0;border:1px #d0d7da solid;text-align:left;padding:12px 12px;overflow:hidden;}
 
@@ -46,15 +46,15 @@ body:before {
 .nav {width:100%;height:160px;overflow:hidden;}
 .nav li{width:224px;height:160px;float:left;padding-right:12px;}
 .nav img{width:206px;height:142px;display:block;margin-left:8px}
-.nav-button{width:224px;height:93px;background:url(../images/button.png) no-repeat 0 0;display:block;color:#5599ff;position:relative;left:0px;bottom:75px;cursor:pointer}
+.nav-button{width:224px;height:93px;background:url(../images/index/button.png) no-repeat 0 0;display:block;color:#5599ff;position:relative;left:0px;bottom:75px;cursor:pointer}
 .nav-button h2{padding-top:15px; font-family:"黑体"}
 .nav-button p{color:gray;height:20px;margin:0 auto;overflow:hidden; padding:0 5px;}
 
 .summary-nav{width:100%;height:130px}
 .summary-nav li{display:block;float:left;margin:10px 10px 0 10px;cursor:pointer}
 
-.system-title{width:39px;height:112px;background:url(../images/channel.png);display:block;float:left;margin-top:9px}
-.system-thumbs{background:url(../images/icon.png) no-repeat;width:140px;height:112px;}
+.system-title{width:39px;height:112px;background:url(../images/index/channel.png);display:block;float:left;margin-top:9px}
+.system-thumbs{background:url(../images/index/icon.png) no-repeat;width:140px;height:112px;}
 .system-pms{background-position:0 0;}
 .system-cr{background-position: -140px 0;}
 .system-ci{background-position:-280px 0;}
