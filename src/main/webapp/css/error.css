@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, from {height: 100%;}
+body{min-width:960px;}
+#global-wrapper {background:#ebebeb;min-height:100%;padding-bottom:10px}
+#global-main {overflow:auto;background:transparent}  /* 必须使用和footer相同的高度 */
+#footer-category{padding-top:-100px;position:relative;}
+.clearfix {display: block;}
+
+/*头部Logo部分的样式*//*
+#head, #content,.footer-logo,.us-more{width:960px;margin:0 auto;}
+#head{height:100px;background:url(../images/bg-shadow.png) bottom no-repeat}
+.logo {padding-top:20px;padding-left:30px}
+.nav{float:right;padding-right:40px;padding-top:40px}
+.nav li{width:80px;height:20px;float:left;text-align:center}
+.nav li a{font:20px "黑体";color:#aaaaaa}*/
+
+/*头部样式*/
+#head-bg{background:#fefefe}
+#head,#content, .us-more,.footer-logo{width:960px; margin:0 auto;}
+#head{height:60px;}
+.about{width:400px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;float:right;}
+.about a:hover{text-decoration:none;color:blue;}
+.about a{padding:0 5px}
+.search-text{width:160px;height:20px;border:1px #bbb solid;padding-left:2px;padding-left:24px;border-radius:10px;background:url(../images/comment/search.png) no-repeat;}
+
+
+/*内容部分的样式*/
+#content{height:300px;text-align:left;background:white;border:1px solid #e5e5e5;margin-top:60px}
+.error{display:block;color:#adadad}
+.error h1{width:248px;height:247px;float:right;}
+.error  h1 img{margin-top:53px}
+
+.error h2 img{margin:30px 0 0 30px}
+.sorryerror {position:relative;top:-15px;left:200px;width:400px;font-size:16px;line-height:20px}
+
+.menu{position:relative;left:30px;width:400px;padding-top:15px}
+.menu p{font-size:14px}
+.menu ul{height:20px;padding-top:10px}
+.menu ul li{float:left;padding-right:10px;}
+.menu ul li a{font:20px  "黑体" bold;color:#adadad}
+.menu ul li a:hover{color:#000000;}
+
+/* 底部版权部分的样式 */
+#footer-category, #footer-global,.us-more h4{border-bottom:1px solid #e0e0e0;}
+#footer-category{width:100%;min-height:180px;background:#f8f8f8;border-top:1px solid #e0e0e0;}
+#footer-global{width:100%;height:60px;overflow:hidden;}
+.us-more{padding-top:20px;}
+.us-more li{width:200px;display:block;float:left;line-height:20px;font-size:12px;padding-right:40px;}
+.us-more li a{color:#4e86dd}
+.us-more h4{width:150px;margin-bottom:5px;padding-bottom:5px;color:#8c8c8c}
+
+.footer-logo img{margin-top:10px;margin-right:60px;float:left;}
+.footer-copyright{line-height:18px;padding-top:6px;}
+.footer-copyright a{color:blue;padding-right:10px}

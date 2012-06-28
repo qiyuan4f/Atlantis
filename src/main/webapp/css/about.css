@@ -130,13 +130,9 @@ a:hover, .direct li a:hover, {color:blue;}
 .location{width:100%;height:auto;padding-bottom:15px;line-height:18px}
 .location img{width:200px;height:140px;margin-right:20px;padding-top:5px;border:1px solid #f2f2f2}
 
-.team-list{text-align:center;line-height:18px;padding:10px 0}
+.team-list{text-align:center;line-height:16px;padding:10px 0}
 .team-list li{width:160px;height:160px;display:block;margin-right:10px;float:left;margin-bottom:10px;}
-.team-info{width:160px;height:40px;position:relative;left:0;bottom:40px;background:#ddd;}
-
-.transparent{filter:alpha(opacity=0);/*支持 IE 浏览器*/
-             -moz-opacity:0.40;/*支持 FireFox 浏览器*/
-             opacity:0.40;/*支持 Chrome, Opera, Safari 等浏览器*/ }
+.team-info{width:160px;height:32px;position:relative;left:0;bottom:32px;}
 
 /* 底部版权部分的样式 */
 #footer-category, #footer-global,.us-more h4{border-bottom:1px solid #e0e0e0;}
