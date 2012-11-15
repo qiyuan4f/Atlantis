@@ -1,18 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-html, body, from {height: 100%;}
 body{min-width:1200px;}
-#global-wrapper {min-height: 100%;}
-#global-main {padding-bottom:20px; overflow:auto}  /* 必须使用和footer相同的高度 */
-
-/*Opera Fix*/
-body:before {
-	content:"";
-	height:100%;
-	float:left;
-	width:0;
-	margin-top:-32767px;/
-}
 
 .clearfix:after {content: ".";
  display: block;
@@ -31,7 +19,7 @@ body:before {
 .about{width:400px;height:60px;line-height:60px;overflow:hidden;text-align:right;font-family:"黑体";font-size:14px;float:right;}
 .about a:hover{color:blue;text-decoration:none;cursor:pointer}
 .about a {padding:0 5px}
-.search-text{width:160px;height:20px;padding-left:24px;border:1px #bbb solid;border-radius:10px;background:url(../images/comment/search.png) no-repeat}
+.search-text{width:160px;height:20px;padding-left:24px;border:1px #bbb solid;border-radius:10px;background:url(../images/common/search.png) no-repeat}
 
 /*内容部分样式*/
 .help{width:100%;height:36px;background:url(../images/index/banner_2.png) repeat-x;margin-top:20px;margin-right:60px}
@@ -43,6 +31,7 @@ body:before {
 .summary-text{width:345px;height:110px;background:#f8fcff;float:right;margin:26px 30px 0 0;border:1px #d0d7da solid;text-align:left;padding:12px 12px;overflow:hidden;}
 
 .content-wrapper, .detail{width:100%;height:auto;}
+.detail{display:none;}
 .nav {width:100%;height:160px;overflow:hidden;}
 .nav li{width:224px;height:160px;float:left;padding-right:12px;}
 .nav img{width:206px;height:142px;display:block;margin-left:8px}
@@ -82,14 +71,14 @@ body:before {
 .friend-link li{height:32px;line-height:32px;float:right;font-size:14px;font-weight:bold;color:#5599ff;padding-left:10px;cursor:pointer}
 
 .clear{clear:both;}
-.align_left{float:left;}
-.align_right{float:right;}
+.align-left{float:left;}
+.align-right{float:right;}
 hr{border:1px solid #ebe9c6;background:#ebe9c6;}
 .line{width:100%;height:1px;background:#bbb}
 
 
 /* 底部版权部分的样式 */
-#footer-category, #footer-global,.us-more h4{border-bottom:1px solid #e0e0e0;}
+#footer-category, #footer-global,.us-more h4{border-bottom:1px solid #e0e0e0;text-align:left;}
 #footer-category{width:100%;min-height:180px;background:#f8f8f8;border-top:1px solid #e0e0e0;}
 #footer-global{width:100%;height:60px;overflow:hidden;}
 .us-more{padding-top:20px;}

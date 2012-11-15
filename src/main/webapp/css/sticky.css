@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, from {height: 100%;}
+#global-wrapper {min-height: 100%;}
+#global-main {padding-bottom:64px; overflow:auto}   /* 必须使用和footer相同的高度 */
+#global-footer {position:relative; margin-top:-64px; height: 64px; clear:both;}
+
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
