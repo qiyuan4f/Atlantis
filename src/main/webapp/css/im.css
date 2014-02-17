@@ -1,0 +1,218 @@
+.bg-gray {
+    background: #f7f7f7;
+    background-color: #f7f7f7
+}
+
+/*banner css样式*/
+.im-banner {
+    height: 350px;
+    margin-top: 3px;
+    background: url(../images/im/bg-banner.png) repeat-x top;
+    color: #ffffff;
+    min-width: 960px;
+}
+
+.banner-content {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.pic {
+    margin-top: 50px
+}
+
+.txt {
+    width: 350px;
+    margin: 60px 20px 0 20px;
+    padding-left: 10px
+}
+
+.txt img {
+    margin-top: 0px;
+}
+
+.download {
+    width: 100%;
+    text-align: center;
+    clear: both;
+    vertical-align: middle;
+    padding-top: 30px;
+    color: #999;
+}
+
+.download img {
+    padding-bottom: 10px;
+    cursor: pointer
+}
+
+.feature-content {
+    background: #e1e8d9;
+    width: 960px;
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    border: 1px solid #bdc9d3;
+}
+
+/*左侧内容样式*/
+.shadow {
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+}
+
+.content ul li {
+    padding: 10px 0;
+    float: left;
+    width: 550px;
+    margin-left: 40px;
+    border-bottom: 1px dotted #ffffff;
+}
+
+.content ul .feature-img {
+    padding-right: 30px
+}
+
+.content ul li .title-img {
+    padding-top: 10px;
+}
+
+.content ul li p {
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px
+}
+
+/*右侧内容样式*/
+.title {
+    width: 550px;
+    border-bottom: 2px solid #ffffff;
+    margin-left: 40px;
+    margin-top: 40px
+}
+
+.title img {
+    padding-bottom: 5px;
+    width: 112px;
+    border-bottom: 4px solid #30abe7;
+    position: relative;
+}
+
+.menu-bg-1 {
+    background: #e6e6e6;
+}
+
+.menu-bg-2 {
+    background: #f8fbf4;
+}
+
+.menu-nav {
+    width: 250px;
+    margin-right: 40px;
+    margin-top: 40px
+}
+
+.nav-list {
+    padding: 10px 20px;
+    line-height: 20px;
+    margin-top: 20px
+}
+
+.nav-list h3 {
+    height: 20px;
+    border-bottom: 2px solid #9CB3B3;
+    padding-bottom: 8px;
+    margin-bottom: 10px
+}
+
+.nav-list .nav-img {
+    padding: 0
+}
+
+.nav-list .im-img {
+    padding: 0;
+    margin: 0
+}
+
+.nav-list p {
+    font-weight: bold;
+}
+
+.nav-list span {
+    font-weight: normal;
+    display: inline-block
+}
+
+.nav-list img {
+    padding-top: 10px;
+    margin-left: 30px;
+    cursor: pointer
+}
+
+.special {
+    width: 960px;
+    height: 230px;
+    clear: both;
+    float: left;
+    margin: 60px 0 30px 0;
+    background: url(../images/im/bg.png) repeat-x;
+    border: 1px solid #bdc9d3;
+    clear: both;
+}
+
+.special img {
+    margin-left: 5px
+}
+
+.step {
+    background: url(../images/im/step.png) center no-repeat;
+    width: 960px;
+    height: 180px;
+    clear: both;
+    margin: 0px auto;
+}
+
+.nav-question {
+    width: 960px;
+    margin: 40px auto;
+    padding: 20px 0;
+    text-align: left;
+    background: #e5edd5;
+    border: 1px solid #bdc9d3;
+}
+
+.question {
+    margin-left: 40px;
+    font: 24px "Microsoft Yahei";
+    color: #0160A1;
+    font-weight: bold;
+    padding: 30px 0 10px 0;
+    background: url(../images/im/changjianwenti.png) no-repeat
+}
+
+.question-list {
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 20px
+}
+
+.question-list li {
+    padding: 10px 30px;
+}
+
+.question-title {
+    margin-bottom: 10px;
+    font: 16px "Microsoft YaHei";
+    color: #2d2d2d;
+    height: 26px;
+    line-height: 26px;
+}
+
+.question-title img {
+    vertical-align: middle
+}
+
+.question-content {
+    padding-left: 30px;
+    color: #6d6d6d;
+}

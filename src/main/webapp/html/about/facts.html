@@ -1,38 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="../../css/global.css" type="text/css"/>
-<link rel="stylesheet" href="../../css/about.css" type="text/css"/>
-<link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
-<script type="text/javascript" src="../../scripts/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="../../scripts/js.js"></script>
-<title>高分网格-我们是谁</title>
-
-<!--[if !IE 7]>
-<style type="text/css">
-#global-wrapper {display:table;height:100%}
-</style>
-</script>
-<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/about.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
+    <title>高分网格-我们是谁</title>
 </head>
 
 <body>
 <div id="global-wrapper">
-	<div id="head-bg">
-		<div id="head">
-			<p class="about">
-				<a class="blue bold" href="#" title="注册">注册</a>
-				<a href="#" title="登录">登录</a>
-				<a href="#" title="关于">关于</a>
-				<label>
-					<input class="search-text" type="text"/>
-				</label>
-			</p>
-			<img src="../../images/common/logo.png" class="logo" alt="" />
-		</div>
-		<div class="line"></div>
-	</div>
+    <!--头部-->
+    <header>
+        <div id="head" class="centrum">
+            <nav class="about">
+                <a class="blue bold" href="#" title="注册">注册</a>
+                <a href="#" title="登录">登录</a>
+                <a href="../../html/about/index.html" title="关于">关于</a>
+                <input class="search-text" type="text" placeholder="搜索内容"/>
+            </nav>
+            <a href="../index.html">
+                <img src="../../images/common/logo.png" class="logo" alt="logo"/>
+            </a>
+        </div>
+    </header>
+    <!--头部end-->
+    <!--索引-->
 	<div id="direct-bg">
 		<ol class="direct">
 			<li class="direct-parent"><a class="gray" href="../../html/index.html" title="首页">首页</a></li>
@@ -42,21 +35,25 @@
 			<li class="direct-current">我们是谁</li>
 		</ol>
 	</div>
-		<div class="nav">
-			<div class="banner">
-				<div class="nav-word">
-					<h1>关于GFG</h1>
-					<p>
-						什么是GFG：Gao'Feng Grid<br />
-						研究分布式计算、网格技术、云计算技术<br />
-						解决海量遥感数据的共享问题，构建开放有价值的遥感应用市场<br />
-						了解我们，请<a class="white bold" href="facts.html" title="从这里开始"><em>从这里开始</em></a>
-					</p>
-				</div>
-			</div>
-		</div>
+    <!--索引-->
+    <!--banner-->
+    <div class="nav">
+        <div class="banner">
+            <div class="nav-word">
+                <h1>关于GFG</h1>
+                <p>
+                    什么是GFG：Gao'Feng Grid<br />
+                    研究分布式计算、网格技术、云计算技术<br />
+                    解决海量遥感数据的共享问题，构建开放有价值的遥感应用市场<br />
+                    了解我们，请<a class="white bold" href="facts.html" title="从这里开始"><em>从这里开始</em></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--banner end-->
 	<div id="global-main" class="clearfix">
 		<div class="content-wrapper">
+            <!--列表选项-->
 			<div class="menu-bg">
 				<div class="menu">
 					<div class="menu-content first">
@@ -84,11 +81,13 @@
 					</div>
 				</div>
 			</div>
+            <!--列表选项 end-->
+            <!--主体-->
 			<div class="content" id="content">
 				<p class="detail">
 					浙江大学先进技术研究院高分辨率对地观测工程中心，是浙江大学专门批文成立的从事对地观测技术、遥感卫星应用、遥感信息处理的专业工程技术中心，作为中国最大的对地观测数据中心（国家航天局对地观测工程中心）的主要技术支撑单位之一，立志于将互联网技术、海量存储技术、网格与云计算技术、SOA与服务计算等先进信息技术应用于对地观测领域，推动我国对地观测体系的信息技术进步，为建立中国自己的谷歌地球提供核心、基础的信息技术支撑。
 				</p>
-				<h2><span class="title-bg title-location align-left"></span>我们的位置</h2>
+				<h2><span class="title-bg title-location fl"></span>我们的位置</h2>
 				<p class="detail">
 					浙江大学先进技术研究院高分辨率对地观测工程中心<br/>
 					于2009年春，在美丽的杭州西子湖畔成立，最初办公地点建立在浙大西溪校区北苑（建筑研究院）。<br/>
@@ -96,7 +95,7 @@
 					<img class="img-border" src="../../images/about/xihu.jpg" alt=""/><br/>
 					有兴趣在以上任意一个地方工作？<a class="blue" href="" title="我们一直在寻找最优秀的人才">我们一直在寻找最优秀的人才</a></p>
 				<div class="location clear">
-					<img class="align-left" src="../../images/about/hangzhou.jpg" />
+					<img class="fl" src="../../images/about/hangzhou.jpg" />
 					<h3>杭州 ▪ 西湖</h3>
 					<p>地址：杭州市西湖区文三路232号浙江大学西溪校区北苑东大楼附楼三楼</p>
 					<p>邮编：310000</p>
@@ -106,7 +105,7 @@
 					<p>交通：上宁桥站 K179 82 527/K527 290/K290 K278 K275 270/K270 156/K156 K74</p>
 				</div>
 				<div class="location clear">
-					<img class="align-left" src="../../images/about/beijing.jpg" />
+					<img class="fl" src="../../images/about/beijing.jpg" />
 					<h3>北京 ▪ 北奥</h3>
 					<p>地址：北京枫林绿洲</p>
 					<p>邮编：</p>
@@ -116,10 +115,12 @@
 					<p>交通：</p>
 				</div>
 			</div>
-		</div>
+            <!--主体 end-->
+        </div>
 	</div>
 </div>
-<div id="global-footer">
+<!--底部-->
+<footer id="global-footer">
 	<div id="footer-category">
 		<ul class="us-more">
 			<li>
@@ -143,7 +144,7 @@
 				<h4>文档</h4>
 				<ul>
 					<li><a href="#" title="帮助文档">帮助文档</a></li>
-					<li><a href="#" title="开发API">开发API</a></li>
+					<li><a href="../api.html" title="开发API">开发API</a></li>
 				</ul>
 			</li>
 			<li>
@@ -158,14 +159,18 @@
 	</div>
 	<div id="footer-global">
 		<div class="footer-logo">
-			<img class="align-left" src="../../images/common/gfg_footer.png" alt="" />
+			<img class="fl" src="../../images/common/gfg_footer.png" alt="" />
 			<div class="footer-copyright">
 				<p>Copyright © 2012 ccnt lab.All rights reserved</p>
 				<a href="#">Terms of Service</a><a href="#">Privacy</a> <a href="#">Security</a>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
+<!--底部 end-->
+<script type="text/javascript" src="../../scripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../scripts/about.js"></script>
+<script type="text/javascript" src="../../scripts/slider.js"></script>
 </body>
 </html>
 

@@ -1,143 +1,603 @@
 @charset "utf-8";
 /* css document */
-div { display:block }
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, form, fieldset, input, button, lengend, textarea, p, blockquote, th, td {padding:0; margin:0; }
+div {
+    display: block
+}
 
-body { background-color: #ffffff; color: #000000; }
-nobr { white-space: nowrap; }
-body { padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, form,section, fieldset, input, button, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-body { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-button { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-input { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-select { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-textarea { font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif; }
-h1 { font-size: 18px; }
-h2 { font-size: 16px; }
-h3 { font-size: 14px; }
-h4 { font-size: 100%; }
-h5 { font-size: 100%; }
-h6 { font-size: 100%; }
-ul { list-style-type: none; }
-ol { list-style-type: none; }
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-abbr[title] { border-bottom: 1px dotted; cursor: help; }
-acronym[title] { border-bottom: 1px dotted; cursor: help; }
-q:before { content: ''; }
-q:after { content: ''; }
-legend { color: #000; }
-fieldset { border-bottom-style: none; border-right-style: none; border-top-style: none; border-left-style: none; }
-img { border-bottom-style: none; border-right-style: none; border-top-style: none; border-left-style: none; }
-button { font-size: 100%; }
-input { font-size: 100%; }
-input.checkbox { margin-right:3px; padding:0; vertical-align:-2px; _vertical-align:0px}
-select { font-size: 100%; }
-textarea { font-size: 100%; }
-table { border-spacing: 0; border-collapse:collapse; }
-hr { border-bottom-style: none; border-right-style: none; border-top-style: none; height: 1px; color: #fff; border-left-style: none; }
-body { color: #404040; line-height: 1.5; }
-button { line-height: 1.5; }
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
 
-input { line-height: 1.5; }
-input.input-color { color:#BBB; }
-input.input-tip { background:url(../login/images/login-images.png) no-repeat 0 0}
-input.input-tip { font-size:16px; width:200px; height:19px; line-height:19px; padding:4px 5px 1px; background-position:0 -105px; border:1px solid #4B80A5; margin:1px; color:#A0A0A0; }
-input.input-active{color:#333;border:2px solid #5b8eb1;margin:0;}
-input.input-error { border:2px solid #E54246; margin:0; }
-input.input-code{width:65px;}
+nobr {
+    white-space: nowrap;
+}
 
-img.img-code { width:120px; height:25px; border:1px solid #4B80A5; }
+body {
+    font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif;
+}
+
+button {
+    font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif;
+}
+
+input {
+    font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif;
+}
+
+select {
+    font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif;
+}
+
+textarea {
+    font: 13px/1 helvetica, arial, tahoma, "宋体", sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+h5 {
+    font-size: 100%;
+}
+
+h6 {
+    font-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+acronym[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before {
+    content: '';
+}
+
+q:after {
+    content: '';
+}
+
+legend {
+    color: #000;
+}
+
+fieldset {
+    border-style: none;
+}
+
+img {
+    border-style: none;
+}
+
+button {
+    font-size: 100%;
+}
+
+input {
+    font-size: 100%;
+}
+
+input.checkbox {
+    margin-right: 3px;
+    padding: 0;
+    vertical-align: -2px;
+    _vertical-align: 0px
+}
+
+select {
+    font-size: 100%;
+}
+
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+hr {
+    height: 1px;
+    color: #fff;
+    border-style: none;
+}
+
+body {
+    color: #404040;
+    line-height: 1.5;
+}
+
+button {
+    line-height: 1.5;
+}
+
+input {
+    line-height: 1.5;
+}
+
+input.input-color {
+    color: #BBB;
+}
+
+input.input-tip {
+    font-size: 16px;
+    width: 200px;
+    height: 19px;
+    line-height: 19px;
+    padding: 4px 5px 1px;
+    background-position: 0 -105px;
+    border: 1px solid #4B80A5;
+    margin: 1px;
+    color: #A0A0A0;
+}
+
+input.input-active {
+    color: #333;
+    border: 2px solid #5b8eb1;
+    margin: 0;
+}
+
+input.input-error {
+    border: 2px solid #E54246;
+    margin: 0;
+}
+
+input.input-code {
+    width: 65px;
+}
+
+img.img-code {
+    width: 120px;
+    height: 25px;
+    border: 1px solid #4B80A5;
+}
+
+select {
+    line-height: 1.5
+}
+
+textarea {
+    line-height: 1.5;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+a.voa:link {
+    color: blue;
+}
+
+a.voa:visited {
+    color: brown;
+}
+
+a.voa:hover {
+    color: red;
+    position: relative;
+    left: 1px;
+    top: 1px;
+    clip: rect();
+}
+
+a.voa:active {
+    color: red;
+}
+
+a.keywords:link {
+    color: blue;
+}
+
+a.keywords:visited {
+    color: blue;
+}
+
+a.keywords:hover {
+    color: red;
+}
+
+a.keywords:active {
+    color: red;
+}
+
+a.greenlink:link {
+    color: #006600;
+}
+
+a.greenlink:visited {
+    color: #006600;
+}
+
+a.greenlink:hover {
+    color: #ff6600;
+}
+
+a.greenlink:active {
+    color: red;
+}
+
+a.bold:link {
+    font-weight: bold;
+}
+
+a.bold:visited {
+    font-weight: bold;
+}
+
+a.bold:hover {
+    font-weight: bold;
+}
+
+a.bold:active {
+    font-weight: bold;
+}
+
+a.underline:link {
+    text-decoration: underline;
+}
+
+a.underline:visited {
+    text-decoration: underline;
+}
+
+a.underline:hover {
+    text-decoration: underline;
+}
+
+a.underline:active {
+    text-decoration: underline;
+}
+
+a.none:link {
+    text-decoration: none;
+}
+
+a.none:visited {
+    text-decoration: none;
+}
+
+a.none:hover {
+    text-decoration: none;
+}
+
+a.none:active {
+    text-decoration: none;
+}
+
+a.overline:link {
+    text-decoration: overline;
+}
+
+a.overline:visited {
+    text-decoration: overline;
+}
+
+a.overline:hover {
+    text-decoration: overline;
+}
+
+a.overline:active {
+    text-decoration: overline;
+}
+
+a.line-through:link {
+    text-decoration: line-through;
+}
+
+a.line-through:visited {
+    text-decoration: line-through;
+}
+
+a.line-through:hover {
+    text-decoration: line-through;
+}
+
+a.line-through:active {
+    text-decoration: line-through;
+}
+
+a.blink:link {
+    text-decoration: blink;
+}
+
+a.blink:visited {
+    text-decoration: blink;
+}
+
+a.blink:hover {
+    text-decoration: blink;
+}
+
+a.blink:active {
+    text-decoration: blink;
+}
+
+a.black:link {
+    color: #2a2a2a;
+}
+
+a.black:visited {
+    color: #2a2a2a;
+}
+
+a.black:hover {
+    color: red;
+}
+
+a.black:active {
+    color: red;
+}
+
+a.red:link {
+    color: #ec0000;
+}
+
+a.red:visited {
+    color: #ec0000;
+}
+
+a.red:hover {
+    color: black;
+}
+
+a.red:active {
+    color: #ec0000;
+}
+
+a.green:link {
+    color: green;
+}
+
+a.green:visited {
+    color: green;
+}
+
+a.green:hover {
+    color: red;
+}
+
+a.green:active {
+    color: red;
+}
+
+a.yellow:link {
+    color: #fb8004;
+}
+
+a.yellow:visited {
+    color: #fb8004;
+}
+
+a.yellow:hover {
+    color: red;
+}
+
+a.yellow:active {
+    color: red;
+}
+
+a.blue:link {
+    color: blue;
+}
+
+a.blue:visited {
+    color: blue;
+}
+
+a.blue:hover {
+    color: red;
+}
+
+a.blue:active {
+    color: red;
+}
+
+a.purple:link {
+    color: #9c0372;
+}
+
+a.purple:visited {
+    color: #9c0372;
+}
+
+a.purple:hover {
+    color: red;
+}
+
+a.purple:active {
+    color: red;
+}
+
+a.gray:link {
+    color: gray;
+}
+
+a.gray:visited {
+    color: gray;
+}
+
+a.gray:hover {
+    color: #3e3e3e;
+}
+
+a.gray:active {
+    color: gray;
+}
+
+a.white:link {
+    color: white;
+}
+
+a.white:visited {
+    color: white;
+}
+
+a.white:hover {
+    color: red;
+}
+
+a.white:active {
+    color: gray;
+}
+
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: -1000em;
+    overflow: hidden;
+}
+
+#global-wrapper {
+    clear: both;
+    color: #000000;
+    margin: 0px;
+    width: 100%;
+}
+
+#global-header {
+    clear: both;
+    color: #000;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#global-main {
+    clear: both;
+    color: #000;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#global-footer {
+    clear: both;
+    background-color: #fff;
+    color: #000;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#globalbar {
+    font-size: 13px;
+    padding-top: 1px !important;
+    height: 22px
+}
+
+#global-user-bar {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 1px !important;
+    padding-bottom: 7px !important;
+    height: 16px;
+    margin-right: 8px;
+    padding-bottom: 5px !important;
+}
+
+.global-user-bar-split {
+    padding: 0 2px;
+}
 
 
-select { line-height: 1.5 }
-textarea { line-height: 1.5; }
-a:link, a:active, a:visited { text-decoration:none; color:#000000; }
-a:visited { text-decoration:none; color:#000000; }
-a:hover { text-decoration: underline; color:#000000; }
-a.voa:link { color: blue; }
-a.voa:visited { color: brown; }
-a.voa:hover { color: red; position: relative; left: 1px; top: 1px; clip:  rect(); }
-a.voa:active { color: red; }
-a.keywords:link { color: blue; }
-a.keywords:visited { color: blue; }
-a.keywords:hover { color: red; }
-a.keywords:active { color: red; }
-a.greenlink:link { color: #006600; }
-a.greenlink:visited { color: #006600; }
-a.greenlink:hover { color: #ff6600; }
-a.greenlink:active { color: red; }
-a.bold:link { font-weight:bold; }
-a.bold:visited { font-weight:bold; }
-a.bold:hover { font-weight:bold; }
-a.bold:active { font-weight:bold; }
-a.underline:link { text-decoration: underline; }
-a.underline:visited { text-decoration: underline; }
-a.underline:hover { text-decoration: underline; }
-a.underline:active { text-decoration: underline; }
-a.none:link { text-decoration: none; }
-a.none:visited { text-decoration: none; }
-a.none:hover { text-decoration: none; }
-a.none:active { text-decoration: none; }
-a.overline:link { text-decoration: overline; }
-a.overline:visited { text-decoration: overline; }
-a.overline:hover { text-decoration: overline; }
-a.overline:active { text-decoration: overline; }
-a.line-through:link { text-decoration: line-through; }
-a.line-through:visited { text-decoration: line-through; }
-a.line-through:hover { text-decoration: line-through; }
-a.line-through:active { text-decoration: line-through; }
-a.blink:link { text-decoration: blink; }
-a.blink:visited { text-decoration: blink; }
-a.blink:hover { text-decoration: blink; }
-a.blink:active { text-decoration: blink; }
-a.black:link { color: #2a2a2a; }
-a.black:visited { color: #2a2a2a; }
-a.black:hover { color: red; }
-a.black:active { color: red; }
-a.red:link { color: #ec0000; }
-a.red:visited { color: #ec0000; }
-a.red:hover { color: black; }
-a.red:active { color: #ec0000; }
-a.green:link { color: green; }
-a.green:visited { color: green; }
-a.green:hover { color: red; }
-a.green:active { color: red; }
-a.yellow:link { color: #fb8004; }
-a.yellow:visited { color: #fb8004; }
-a.yellow:hover { color: red; }
-a.yellow:active { color: red; }
-a.blue:link { color: blue; }
-a.blue:visited { color: blue; }
-a.blue:hover { color: red; }
-a.blue:active { color: red; }
-a.purple:link { color: #9c0372; }
-a.purple:visited { color: #9c0372; }
-a.purple:hover { color: red; }
-a.purple:active { color: red; }
-a.gray:link { color: gray; }
-a.gray:visited { color: gray; }
-a.gray:hover { color: #3e3e3e; }
-a.gray:active { color: gray; }
-a.white:link { color: white; }
-a.white:visited { color: white; }
-a.white:hover { color: red; }
-a.white:active { color: gray; }
-.hide { position:absolute; width:1px; height:1px; top:-1000em; overflow:hidden; }
-#global-wrapper { clear:both; background-color: #ffffff; color: #000000; margin: 0px; width: 100%; }
-#global-header { clear:both; background-color: #fff; color: #000; margin: 0px; width: 100%; text-align: center; }
-#global-main { clear:both; background-color: #fff; color: #000; margin: 0px; width: 100%; text-align: center; }
-#global-footer { clear:both; background-color: #fff; color: #000; margin: 0px; width: 100%; text-align: center; }
+.fr {
+    float: right;
+}
 
-#globalbar { font-size:13px; padding-top:1px !important; height:22px }
-#global-user-bar { text-align:right; font-size:13px; padding-top:1px !important; padding-bottom:7px !important; height: 16px; margin-right:8px; padding-bottom:5px!important; }
-.global-user-bar-split { padding:0 2px; }
+.fl {
+    float: left;
+}
 
-.tipbox .tipbox-top, .tipbox .tipbox-bottom, .tipbox .tipbox-center em { background:url(../login/images/login-images.png) no-repeat 0 0}
-.tipbox {font-size:12px; width:203px; position:absolute; bottom:30px; left:80px; color:#c00;}
-.tipbox .tipbox-top {background-position:0 -160px; height:2px}
-.tipbox .tipbox-center {width:182px; border-left:1px solid #c6c6c6; border-right:1px solid #c6c6c6; background:#ffffe3; padding:4px 7px 5px 10px; padding-bottom:0	9; line-height:1.2em; zoom:1; overflow:hidden;}
-.tipbox .tipbox-bottom { background-position: 0 -186px; height: 7px; overflow: hidden; clear: both; }
-.tipbox .box_center span {float:left;width:170px;}
-.tipbox .tipbox-center em { background-position:-210px -167px; cursor:pointer; float:right; height:9px; line-height:999em; overflow:hidden; width:8px;}
-.tipbox .box_center label{color:#087AD3;cursor:default;}
+/*头部样式*/
+header {
+    background: #fefefe;
+    border-bottom: 1px #BBB solid;
+}
+#head {
+    height: 60px;
+}
+
+.about {
+    width: 70%;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    text-align: right;
+    font-family: "黑体";
+    font-size: 1.08em;
+    float: right;
+}
+
+.about a:hover {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.about a {
+    padding: 0 0.74404761904761904761904761904762%;
+}
+
+.search-text {
+    width: 23.809523809523809523809523809524%;
+    height: 20px;
+    padding-left: 24px;
+    border: 1px #bbb solid;
+    border-radius: 10px;
+    outline: none;
+    background: url(../images/common/search.png) no-repeat;
+    font-size: 12px;
+}

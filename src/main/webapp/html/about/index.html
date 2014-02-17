@@ -1,36 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="../../css/global.css" type="text/css"/>
-<link rel="stylesheet" href="../../css/about.css" type="text/css"/>
-<link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
-<title>高分网格-门户索引</title>
-
-<!--[if !IE 7]>
-<style type="text/css">
-#global-wrapper {display:table;height:100%}
-</style>
-<![endif]-->
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/about.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/footer.css" type="text/css"/>
+    <title>高分网格-关于</title>
 </head>
 
 <body>
 <div id="global-wrapper">
-	<div id="head-bg">
-		<div id="head">
-			<p class="about">
-				<a class="blue bold" href="#" title="注册">注册</a>
-				<a href="#" title="登录">登录</a>
-				<a href="#" title="关于">关于</a>
-				<label>
-					<input class="search-text" type="text"/>
-				</label>
-			</p>
-			<img src="../../images/common/logo.png" class="logo" alt="" />
-		</div>
-	<div class="line"></div>
-	</div>
+    <!--头部-->
+    <header>
+        <div id="head" class="centrum">
+            <nav class="about">
+                <a class="blue bold" href="#" title="注册">注册</a>
+                <a href="#" title="登录">登录</a>
+                <a href="../../html/about/index.html" title="关于">关于</a>
+                <input class="search-text" type="text" placeholder="搜索内容"/>
+            </nav>
+            <a href="../index.html">
+                <img src="../../images/common/logo.png" class="logo" alt="logo"/>
+            </a>
+        </div>
+    </header>
+    <!--头部end-->
+    <!--索引-->
 	<div id="direct-bg">
 		<ol class="direct">
 			<li class="direct-parent"><a class="gray" href="../../html/index.html" title="首页">首页</a></li>
@@ -38,6 +33,8 @@
 			<li class="direct-current">关于</li>
 		</ol>
 	</div>
+    <!--索引-->
+    <!--banner-->
 	<div class="nav">
 		<div class="banner">
 			<div class="nav-word">
@@ -51,11 +48,13 @@
 			</div>
 		</div>
 	</div>
+    <!--banner end-->
 <div id="global-main" class="clearfix">
 		<div class="content-wrapper" id="about">
 			<div class="summary clear">
 				<h1>高分网格目标是组织国内部委、行业以及公众等领域的遥感信息，使信息获取变得更便捷、更有价值</h1>
 			</div>
+            <!--信息栏-->
 			<div class="menu-bg">
 				<div class="menu">
 					<div class="menu-content first">
@@ -88,7 +87,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="content">
+            <!--信息栏 end-->
+            <!--概览-->
+            <div class="content">
 				<ul class="info">
 					<li>
 						<span class="info-bg info-location"></span>
@@ -120,19 +121,19 @@
 					<img src="../../images/about/our%20culture.png"/>
 					<h4>我们的文化</h4>
 					<p>我们追求的品质和价值，倡导的价值观</p>
-					<a class="align-right blue" href="facts.html#us-culture" title="查看更多">查看更多</a>
+					<a class="fr blue" href="facts.html#us-culture" title="查看更多">查看更多</a>
 				</div>
 				<div class="about-info">
 					<img src="../../images/about/our%20location.png"/>
 					<h4>我们的位置</h4>
 					<p>我们公司座落的位置，工作环境的品质</p>
-					<a class="align-right blue" href="facts.html#us-location" title="查看更多">查看更多</a>
+					<a class="fr blue" href="facts.html#us-location" title="查看更多">查看更多</a>
 				</div>
 				<div class="about-info">
 					<img src="../../images/about/our%20team.png"/>
 					<h4>我们的团队</h4>
 					<p>了解我们的组织结构，我们的团队成员动态</p>
-					<a class="align-right blue" href="facts.html#us-team" title="查看更多">查看更多</a>
+					<a class="fr blue" href="facts.html#us-team" title="查看更多">查看更多</a>
 				</div>
 			</div>
 			<div class="product clear-left">
@@ -145,10 +146,12 @@
 				</p>
 			</div>
 		</div>
-		</div>
+            <!--概览 end-->
+        </div>
 	</div>
 </div>
-<div id="global-footer">
+<!--底部-->
+<footer id="global-footer">
 <div id="footer-category">
 	<ul class="us-more">
 		<li>
@@ -172,7 +175,7 @@
 			<h4>文档</h4>
 			<ul>
 				<li><a href="#" title="帮助文档">帮助文档</a></li>
-				<li><a href="#" title="开发API">开发API</a></li>
+				<li><a href="../api.html" title="开发API">开发API</a></li>
 			</ul>
 		</li>
 		<li>
@@ -187,14 +190,15 @@
 </div>
 <div id="footer-global">
 	<div class="footer-logo">
-		<img class="align-left" src="../../images/common/gfg_footer.png" alt="" />
+		<img class="fl" src="../../images/common/gfg_footer.png" alt="" />
 		<div class="footer-copyright">
 			<p>Copyright © 2012 ccnt lab.All rights reserved</p>
 			<a href="#">Terms of Service</a><a href="#">Privacy</a> <a href="#">Security</a>
 		</div>
 	</div>
 </div>
-</div>
+</footer>
+<!--底部 end-->
 </body>
 </html>
 
